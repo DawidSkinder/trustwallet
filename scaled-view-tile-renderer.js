@@ -15,7 +15,7 @@
   const desktopMinTileModeScale = 0.05;
   const mobileMinTileModeScale = 0.018;
   const desktopMaxTileModeScale = 0.35;
-  const mobileMaxTileModeScale = 0.35;
+  const mobileMaxTileModeScale = 0.5;
   const maxTileSourceScale = 0.5;
   const disabledByDebugRing = params.has("debugRing");
   const disabledByQuery =
@@ -61,6 +61,7 @@
       manifestUrl: "",
       tileProfile: "",
       maxTileModeScale: null,
+      mobileRasterFirstThroughMaxZoom: false,
       levelId: "",
       level: null,
       levelSelectionStrategy: "single-highest-source",
@@ -140,6 +141,7 @@
       manifestUrl: state.manifestUrl,
       tileProfile: state.tileProfile,
       maxTileModeScale: getMaxTileModeScale(),
+      mobileRasterFirstThroughMaxZoom: state.tileProfile === "mobile" && getMaxTileModeScale() >= maxTileSourceScale,
       manifestLoaded: Boolean(state.manifest),
       loadedTiles: Array.from(state.imageCache.values()).filter((entry) => entry.status === "loaded").length,
     });

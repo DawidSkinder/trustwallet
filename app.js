@@ -462,6 +462,32 @@ function openMobileCardPreview(card) {
   closeButton.addEventListener("click", closeMobileCardPreview, { once: true });
 }
 
+function findEvidenceCardById(cardId) {
+  const normalizedCardId = String(cardId || "");
+
+  if (!normalizedCardId) {
+    return null;
+  }
+
+  return Array.from(document.querySelectorAll(".evidence-card[data-card-id]")).find(
+    (card) => card.getAttribute("data-card-id") === normalizedCardId,
+  );
+}
+
+function openScaledViewMobilePreview(cardId) {
+  if (!isMobileInteractionUi()) {
+    return;
+  }
+
+  const card = findEvidenceCardById(cardId);
+
+  if (!card) {
+    return;
+  }
+
+  openMobileCardPreview(card);
+}
+
 function setInfoPopoverOpen(nextOpen) {
   if (!infoPopover || !infoPill) {
     return;
@@ -965,6 +991,10 @@ document.addEventListener("click", (event) => {
   event.preventDefault();
   event.stopPropagation();
   openMobileCardPreview(card);
+});
+
+document.addEventListener("ds2026:scaled-view-card-click", (event) => {
+  openScaledViewMobilePreview(event.detail?.cardId);
 });
 
 document.addEventListener("keydown", (event) => {
