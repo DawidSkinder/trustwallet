@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Case for Fit — Trust Wallet × Dawid Skinder</title>
+    <meta
+      name="description"
+      content="An AI-native interactive evidence map connecting Trust Wallet’s Creative Director role with Dawid Skinder’s Web3 product, UX, brand, and trust-focused experience."
+    />
+    <link rel="canonical" href="https://trustwallet.dawidskinder.pl/" />
+    <meta property="og:title" content="The Case for Fit — Trust Wallet × Dawid Skinder" />
+    <meta
+      property="og:description"
+      content="An AI-native interactive evidence map connecting Trust Wallet’s Creative Director role with Dawid Skinder’s Web3 product, UX, brand, and trust-focused experience."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://trustwallet.dawidskinder.pl/" />
+    <meta property="og:image" content="https://trustwallet.dawidskinder.pl/assets/ds_trustwallet_ogimage.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="The Case for Fit — Trust Wallet × Dawid Skinder" />
+    <meta
+      name="twitter:description"
+      content="An AI-native interactive evidence map connecting Trust Wallet’s Creative Director role with Dawid Skinder’s Web3 product, UX, brand, and trust-focused experience."
+    />
+    <meta name="twitter:image" content="https://trustwallet.dawidskinder.pl/assets/ds_trustwallet_ogimage.png" />
+    <link rel="icon" type="image/svg+xml" href="assets/ds-logo.svg" />
+    <style>
+      .stage.is-canvas-loading [data-canvas-world],
+      .stage.is-intro-empty [data-canvas-world] {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+      }
+
+      .stage.is-intro-thesis [data-canvas-world],
+      .stage.is-intro-world [data-canvas-world],
+      .stage.is-canvas-ready [data-canvas-world] {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .stage.is-intro-empty [data-scaled-view-canvas],
+      .stage.is-intro-thesis [data-scaled-view-canvas] {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+      }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css?v=20260514-scaled-view-tiles-4" />
+    <script src="infinite-canvas.js?v=20260424-viewport-fit-1" defer></script>
+    <script src="app.js?v=20260514-scaled-view-tiles-4" defer></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+    <script src="canvas-data.js?v=20260514-masonry-spacing-1" defer></script>
+    <script src="scaled-view-tile-renderer.js?v=20260514-tile-capture-fix-1" defer></script>
+    <script src="map-card.js?v=20260421-mobile-safe-nav-1" defer></script>
+    <script src="card-connections.js?v=20260421-mobile-safe-nav-1" defer></script>
+  </head>
+  <body>
+    <main class="stage is-canvas-loading" aria-label="The Case for Fit evidence map">
+      <canvas class="infinite-canvas" data-infinite-canvas aria-hidden="true"></canvas>
+      <canvas class="scaled-view-canvas" data-scaled-view-canvas aria-hidden="true"></canvas>
+
+      <div class="canvas-world" data-canvas-world data-startup-hidden aria-hidden="true" style="opacity: 0; visibility: hidden">
+        <section class="evidence-map" data-evidence-map data-card-connections aria-label="The Case for Fit evidence map"></section>
+      </div>
+
+      <div class="corner corner-top-left">
+        <div class="brand-pill" aria-label="Dawid Skinder and Trust Wallet">
+          <img class="brand-logo brand-logo-ds" src="assets/ds-logo.svg" alt="" width="45" height="16" />
+          <span class="brand-cross" aria-hidden="true"></span>
+          <img class="brand-logo brand-logo-trustwallet" src="assets/trustwallet_logo.svg" alt="" width="129" height="20" />
+        </div>
+      </div>
+
+      <div class="corner corner-top-right">
+        <div class="game-controls" aria-label="Canvas controls">
+          <button
+            class="control-button control-button-tool is-active"
+            type="button"
+            data-tool-button="cursor"
+            aria-label="Cursor tool"
+            aria-pressed="true"
+          >
+            <img class="control-icon" src="assets/canvas-cursor.svg" alt="" width="12" height="12" />
+          </button>
+          <button
+            class="control-button control-button-tool control-button-hand"
+            type="button"
+            data-tool-button="hand"
+            aria-label="Hand tool"
+            aria-pressed="false"
+          >
+            <img class="control-icon" src="assets/canvas-hand.svg" alt="" width="11" height="12" />
+          </button>
+          <div class="keyboard-popover">
+            <button
+              class="control-button keyboard-pill"
+              type="button"
+              aria-label="Keyboard and mouse controls"
+              aria-controls="keyboard-panel"
+              aria-expanded="false"
+              aria-describedby="keyboard-panel"
+            >
+              <img class="control-icon control-icon-keyboard" src="assets/canvas-keyboard.svg" alt="" width="18" height="12" />
+            </button>
+            <div class="keyboard-panel" id="keyboard-panel" role="note" aria-label="Keyboard and mouse controls">
+              <p class="keyboard-panel-title">Keyboard controls</p>
+              <dl class="keyboard-shortcuts">
+                <div>
+                  <dt>R</dt>
+                  <dd>Fit canvas to screen</dd>
+                </div>
+                <div>
+                  <dt>Space</dt>
+                  <dd>Hold to pan with hand tool</dd>
+                </div>
+                <div>
+                  <dt>Cmd/Ctrl + +</dt>
+                  <dd>Zoom in</dd>
+                </div>
+                <div>
+                  <dt>Cmd/Ctrl + -</dt>
+                  <dd>Zoom out</dd>
+                </div>
+                <div>
+                  <dt>Shift + 0</dt>
+                  <dd>Zoom to 100%</dd>
+                </div>
+                <div>
+                  <dt>Shift + 1</dt>
+                  <dd>Fit canvas to screen</dd>
+                </div>
+              </dl>
+              <p class="keyboard-panel-note">Mouse: drag with the hand tool, or hold Option/Ctrl/Cmd and scroll to zoom around the pointer.</p>
+            </div>
+          </div>
+          <div class="zoom-control">
+            <button
+              class="zoom-pill"
+              type="button"
+              data-zoom-toggle
+              aria-label="Zoom options"
+              aria-expanded="false"
+              aria-haspopup="menu"
+            >
+              <span data-zoom-readout>100%</span>
+            </button>
+            <div class="zoom-menu" data-zoom-menu hidden>
+              <button class="zoom-menu-item" type="button" data-zoom-action="in">
+                <span>Zoom in</span>
+                <span class="zoom-menu-shortcut" aria-hidden="true">Cmd +</span>
+              </button>
+              <button class="zoom-menu-item" type="button" data-zoom-action="out">
+                <span>Zoom out</span>
+                <span class="zoom-menu-shortcut" aria-hidden="true">Cmd -</span>
+              </button>
+              <button class="zoom-menu-item" type="button" data-zoom-action="100">
+                <span>Zoom to 100%</span>
+                <span class="zoom-menu-shortcut" aria-hidden="true">Shift 0</span>
+              </button>
+              <button class="zoom-menu-item" type="button" data-zoom-action="fit">
+                <span>Fit to screen</span>
+                <span class="zoom-menu-shortcut" aria-hidden="true">Shift 1</span>
+              </button>
+            </div>
+          </div>
+          <button class="control-button" type="button" data-reset-view aria-label="Fit canvas to screen">
+            <img class="control-icon" src="assets/canvas-refresh.svg" alt="" width="12" height="12" />
+          </button>
+        </div>
+      </div>
+
+      <div class="corner corner-bottom-left">
+        <div class="profile-pill" role="group" aria-label="More about Dawid Skinder">
+          <span class="profile-label">More about me:</span>
+          <a
+            class="profile-link"
+            href="https://dawidskinder.pl"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Open Dawid Skinder portfolio"
+          >
+            <img class="profile-icon profile-icon-site" src="assets/site-mark.svg" alt="" width="16" height="16" />
+          </a>
+          <span class="profile-divider" aria-hidden="true"></span>
+          <a
+            class="profile-link"
+            href="https://www.behance.net/dawidskinder"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Open Dawid Skinder on Behance"
+          >
+            <img class="profile-icon profile-icon-behance" src="assets/behance-mark.svg" alt="" width="25" height="16" />
+          </a>
+          <span class="profile-divider" aria-hidden="true"></span>
+          <a
+            class="profile-link"
+            href="https://github.com/DawidSkinder"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Open Dawid Skinder on GitHub"
+          >
+            <img class="profile-icon profile-icon-github" src="assets/github-mark.svg" alt="" width="16" height="16" />
+          </a>
+          <span class="profile-divider" aria-hidden="true"></span>
+          <a
+            class="profile-link"
+            href="https://www.linkedin.com/in/dawidskinder/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Open Dawid Skinder on LinkedIn"
+          >
+            <img class="profile-icon profile-icon-linkedin" src="assets/linkedin-mark.svg" alt="" width="16" height="16" />
+          </a>
+          <span class="profile-divider" aria-hidden="true"></span>
+          <a
+            class="profile-link"
+            href="https://x.com/DawidSkinder"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Open Dawid Skinder on X"
+          >
+            <img class="profile-icon profile-icon-x" src="assets/close-mark.svg" alt="" width="18" height="16" />
+          </a>
+        </div>
+      </div>
+
+      <div class="corner corner-bottom-right">
+        <div class="bottom-cluster">
+          <div class="stack-pill" aria-label="AI-native prototype. Human-directed evidence map. Built with Figma and OpenAI.">
+            <span class="stack-copy">
+              <span>AI-native prototype</span>
+              <img class="icon-12" src="assets/spark.svg" alt="" width="12" height="12" />
+              <span>Human-directed evidence map</span>
+            </span>
+            <span class="divider" aria-hidden="true"></span>
+            <img class="icon-figma" src="assets/figma-mark.svg" alt="" width="12" height="19" />
+            <span class="divider" aria-hidden="true"></span>
+            <img class="icon-20" src="assets/openai-mark.svg" alt="" width="20" height="20" />
+          </div>
+          <div class="info-popover">
+            <button
+              class="info-pill"
+              type="button"
+              aria-label="Information"
+              aria-controls="info-panel"
+              aria-expanded="false"
+              aria-describedby="info-panel"
+            >
+              <span class="info-pill-mark">i</span>
+            </button>
+            <div class="info-panel" id="info-panel" role="note" aria-label="Canvas details">
+              <p>
+                Static HTML, CSS, and vanilla JavaScript. Built as a lightweight evidence-map canvas for this conversation.
+              </p>
+              <p>
+                Pan with the hand tool or Space. Zoom from the control pill, then use fit-to-screen to return to the map overview.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
