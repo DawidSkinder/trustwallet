@@ -15,7 +15,7 @@
   const desktopMinTileModeScale = 0.05;
   const mobileMinTileModeScale = 0.018;
   const desktopMaxTileModeScale = 0.35;
-  const mobileMaxTileModeScale = 0.5;
+  const mobileMaxTileModeScale = 0.55;
   const maxTileSourceScale = 0.5;
   const disabledByDebugRing = params.has("debugRing");
   const disabledByQuery =
@@ -271,9 +271,7 @@
 
     const numericScale = Number(scale);
     const eligibleLevels = state.levels.filter((level) => level.level <= maxTileSourceScale + 0.0001);
-    const maxLevel = eligibleLevels[eligibleLevels.length - 1]?.level;
-
-    if (!eligibleLevels.length || numericScale > Math.min(maxLevel, maxTileModeScale) + 0.0001) {
+    if (!eligibleLevels.length || numericScale > maxTileModeScale + 0.0001) {
       return null;
     }
 
@@ -1116,7 +1114,7 @@
   function shouldIgnorePointerEvent(event) {
     return Boolean(
       event.target instanceof Element &&
-        event.target.closest(".corner, .case-study-detail-layer, .mobile-card-preview, .keyboard-popover"),
+        event.target.closest(".corner, .case-study-detail-layer, .keyboard-popover"),
     );
   }
 

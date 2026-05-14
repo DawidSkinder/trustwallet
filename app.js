@@ -21,7 +21,7 @@ const isTileCaptureMode = urlParams.has("tileCapture");
 const homeScale = 1;
 const resetDurationMs = 520;
 const minCanvasScale = 0.05;
-const mobileMaxScale = 0.48;
+const mobileMaxScale = 0.55;
 const viewportStableFrameCount = 2;
 const fitScaleTolerance = 0.002;
 const fitOffsetTolerance = 2;
@@ -34,7 +34,6 @@ let isZoomMenuOpen = false;
 let pendingCanvasState = null;
 let canvasStateFrame = 0;
 let appliedCanvasState = null;
-let mobileCardPreview = null;
 let isCanvasAutoFitLocked = true;
 let viewportAutoFitFrame = 0;
 let canvasViewportObserver = null;
@@ -405,87 +404,6 @@ function syncResponsiveZoomCopy() {
   }
 
   zoomToHomeLabel.textContent = isMobileUi() ? "Zoom to max" : "Zoom to 100%";
-}
-
-function closeMobileCardPreview() {
-  mobileCardPreview?.remove();
-  mobileCardPreview = null;
-}
-
-function openMobileCardPreview(card) {
-  if (!card || !isMobileInteractionUi()) {
-    return;
-  }
-
-  const shell = card.querySelector(".card-shell");
-
-  if (!shell) {
-    return;
-  }
-
-  closeMobileCardPreview();
-
-  const preview = document.createElement("aside");
-  preview.className = "mobile-card-preview";
-  preview.setAttribute("role", "dialog");
-  preview.setAttribute("aria-modal", "true");
-  preview.setAttribute("aria-label", card.querySelector(".card-headline")?.textContent?.trim() || "Evidence card preview");
-
-  const backdrop = document.createElement("button");
-  backdrop.className = "mobile-card-preview-backdrop";
-  backdrop.type = "button";
-  backdrop.setAttribute("aria-label", "Close card preview");
-
-  const panel = document.createElement("section");
-  panel.className = "mobile-card-preview-panel";
-
-  const closeButton = document.createElement("button");
-  closeButton.className = "mobile-card-preview-close";
-  closeButton.type = "button";
-  closeButton.setAttribute("aria-label", "Close card preview");
-  closeButton.textContent = "Close";
-
-  const content = shell.cloneNode(true);
-  content.classList.add("mobile-card-preview-shell");
-
-  for (const mapFrame of content.querySelectorAll("[data-map-card]")) {
-    delete mapFrame.dataset.mapCard;
-    mapFrame.dataset.mapReady = "static";
-  }
-
-  panel.append(closeButton, content);
-  preview.append(backdrop, panel);
-  document.body.append(preview);
-
-  mobileCardPreview = preview;
-  backdrop.addEventListener("click", closeMobileCardPreview, { once: true });
-  closeButton.addEventListener("click", closeMobileCardPreview, { once: true });
-}
-
-function findEvidenceCardById(cardId) {
-  const normalizedCardId = String(cardId || "");
-
-  if (!normalizedCardId) {
-    return null;
-  }
-
-  return Array.from(document.querySelectorAll(".evidence-card[data-card-id]")).find(
-    (card) => card.getAttribute("data-card-id") === normalizedCardId,
-  );
-}
-
-function openScaledViewMobilePreview(cardId) {
-  if (!isMobileInteractionUi()) {
-    return;
-  }
-
-  const card = findEvidenceCardById(cardId);
-
-  if (!card) {
-    return;
-  }
-
-  openMobileCardPreview(card);
 }
 
 function setInfoPopoverOpen(nextOpen) {
@@ -974,27 +892,6 @@ document.addEventListener("click", (event) => {
     closeKeyboardPopover();
   }
 
-  if (!isMobileInteractionUi()) {
-    return;
-  }
-
-  if (!(target instanceof Element) || target.closest("a, button, .corner, .mobile-card-preview")) {
-    return;
-  }
-
-  const card = target.closest(".evidence-card");
-
-  if (!card || window.__canvasCopy?.infiniteCanvas?.shouldSuppressCanvasClick()) {
-    return;
-  }
-
-  event.preventDefault();
-  event.stopPropagation();
-  openMobileCardPreview(card);
-});
-
-document.addEventListener("ds2026:scaled-view-card-click", (event) => {
-  openScaledViewMobilePreview(event.detail?.cardId);
 });
 
 document.addEventListener("keydown", (event) => {
@@ -1002,7 +899,6 @@ document.addEventListener("keydown", (event) => {
     closeZoomMenu();
     closeInfoPopover();
     closeKeyboardPopover();
-    closeMobileCardPreview();
   }
 
   if (!infiniteCanvas) {
