@@ -105,6 +105,8 @@
     scaleTolerance: 0.002,
     offsetTolerance: 2,
   };
+  const mobileIntroSkipQuery =
+    typeof window.matchMedia === "function" ? window.matchMedia("(max-width: 767px), (pointer: coarse)") : null;
   const startupDiagnostics = {
     startedAt: performance.now(),
     events: [],
@@ -250,9 +252,26 @@
     return new URLSearchParams(window.location.search).has("debugRing");
   }
 
-  function shouldSkipIntro() {
+  function getIntroSkipReason() {
     const params = new URLSearchParams(window.location.search);
-    return params.has("debugRing") || params.get("skipIntro") === "1" || params.has("renderCapture");
+
+    if (params.has("debugRing")) {
+      return "debug-ring";
+    }
+
+    if (params.get("skipIntro") === "1") {
+      return "query-param";
+    }
+
+    if (params.has("renderCapture")) {
+      return "render-capture";
+    }
+
+    if (mobileIntroSkipQuery?.matches) {
+      return "mobile-raster-startup";
+    }
+
+    return "";
   }
 
   function normalizeCardNo(value) {
@@ -2226,9 +2245,12 @@
   async function runIntroSequence(root) {
     const stage = root.closest(".stage");
     const thesisCenter = getThesisCenter(root);
+    const introSkipReason = getIntroSkipReason();
 
-    if (!stage || !thesisCenter || shouldSkipIntro()) {
-      const didFit = await fitCanvasToReadyBounds({ animate: false, phase: "skip-intro" });
+    if (!stage || !thesisCenter || introSkipReason) {
+      const skipReason = introSkipReason || (!stage ? "missing-stage" : "missing-thesis-center");
+      recordStartupEvent("intro-skipped", { reason: skipReason });
+      const didFit = await fitCanvasToReadyBounds({ animate: false, phase: `skip-intro-${skipReason}` });
 
       if (!didFit) {
         throw new Error("Canvas startup failed before ready state: fit-to-screen could not be verified.");
