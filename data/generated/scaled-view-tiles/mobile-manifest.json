@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-14T12:56:19.684Z",
+  "generatedAt": "2026-05-14T13:47:10.570Z",
   "generator": "scripts/generate-scaled-view-tiles.mjs",
   "profile": "mobile",
   "tileSize": 512,
@@ -15,7 +15,7 @@
       "height": 10709
     },
     "renderManifestVersion": "20260514-scaled-view-tiles-1",
-    "renderHash": "b5dd03b9",
+    "renderHash": "d45fdc39",
     "sourceVersions": {
       "data": "20260422-testimonial-card-1",
       "dataContentHashes": {
@@ -28,10 +28,10 @@
       ],
       "scripts": [
         "infinite-canvas.js?v=20260424-viewport-fit-1",
-        "app.js?v=20260514-scaled-view-tiles-4",
+        "app.js?v=20260514-mobile-raster-first-1",
         "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",
         "canvas-data.js?v=20260514-masonry-spacing-1",
-        "scaled-view-tile-renderer.js?v=20260514-debug-ring-spacing-1",
+        "scaled-view-tile-renderer.js?v=20260514-mobile-raster-first-1",
         "map-card.js?v=20260421-mobile-safe-nav-1",
         "card-connections.js?v=20260421-mobile-safe-nav-1"
       ]
