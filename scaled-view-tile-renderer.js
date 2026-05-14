@@ -3,7 +3,7 @@
   const canvas = document.querySelector("[data-scaled-view-canvas]");
   const params = new URLSearchParams(window.location.search);
   const desktopManifestUrl = "data/generated/scaled-view-tiles/manifest.json?v=20260514-tile-capture-fix-1";
-  const mobileManifestUrl = "data/generated/scaled-view-tiles/mobile-manifest.json?v=20260514-tile-capture-fix-1";
+  const mobileManifestUrl = "data/generated/scaled-view-tiles/mobile-manifest.json?v=20260514-mobile-hires-tiles-1";
   const mobileTileMediaQuery = window.matchMedia("(max-width: 1025px), (pointer: coarse)");
   const preloadPadding = 1;
   const allowIncomplete = params.has("scaledViewAllowIncomplete");
@@ -16,7 +16,7 @@
   const mobileMinTileModeScale = 0.018;
   const desktopMaxTileModeScale = 0.35;
   const mobileMaxTileModeScale = 0.55;
-  const maxTileSourceScale = 0.5;
+  const maxTileSourceScale = 0.75;
   const disabledByDebugRing = params.has("debugRing");
   const disabledByQuery =
     disabledByDebugRing ||
@@ -275,7 +275,7 @@
       return null;
     }
 
-    return eligibleLevels[eligibleLevels.length - 1];
+    return eligibleLevels.find((level) => level.level + 0.0001 >= numericScale) ?? eligibleLevels[eligibleLevels.length - 1];
   }
 
   function normalizeAssetRefs(refs = [], options = {}) {

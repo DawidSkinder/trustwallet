@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-14T14:12:08.203Z",
+  "generatedAt": "2026-05-14T14:24:15.406Z",
   "generator": "scripts/generate-scaled-view-tiles.mjs",
   "profile": "mobile",
   "tileSize": 512,
@@ -31,7 +31,7 @@
         "app.js?v=20260514-mobile-zoom-55-1",
         "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",
         "canvas-data.js?v=20260514-mobile-skip-intro-1",
-        "scaled-view-tile-renderer.js?v=20260514-mobile-zoom-55-1",
+        "scaled-view-tile-renderer.js?v=20260514-mobile-hires-tiles-1",
         "map-card.js?v=20260421-mobile-safe-nav-1",
         "card-connections.js?v=20260421-mobile-safe-nav-1"
       ]
@@ -739,7 +739,7 @@
           "column": 6,
           "row": 9,
           "src": "0500/tile-6-9.png",
-          "bytes": 144200
+          "bytes": 144160
         },
         {
           "column": 7,
@@ -841,6 +841,1651 @@
           "column": 11,
           "row": 10,
           "src": "0500/tile-11-10.png",
+          "bytes": 7105
+        }
+      ],
+      "complete": true
+    },
+    {
+      "level": 0.75,
+      "label": "75%",
+      "scaledWidth": 8475,
+      "scaledHeight": 8032,
+      "columns": 17,
+      "rows": 16,
+      "tileCount": 272,
+      "id": "0750",
+      "tiles": [
+        {
+          "column": 0,
+          "row": 0,
+          "src": "0750/tile-0-0.png",
+          "bytes": 7105
+        },
+        {
+          "column": 1,
+          "row": 0,
+          "src": "0750/tile-1-0.png",
+          "bytes": 7105
+        },
+        {
+          "column": 2,
+          "row": 0,
+          "src": "0750/tile-2-0.png",
+          "bytes": 7105
+        },
+        {
+          "column": 3,
+          "row": 0,
+          "src": "0750/tile-3-0.png",
+          "bytes": 7105
+        },
+        {
+          "column": 4,
+          "row": 0,
+          "src": "0750/tile-4-0.png",
+          "bytes": 7105
+        },
+        {
+          "column": 5,
+          "row": 0,
+          "src": "0750/tile-5-0.png",
+          "bytes": 7105
+        },
+        {
+          "column": 6,
+          "row": 0,
+          "src": "0750/tile-6-0.png",
+          "bytes": 89951
+        },
+        {
+          "column": 7,
+          "row": 0,
+          "src": "0750/tile-7-0.png",
+          "bytes": 155808
+        },
+        {
+          "column": 8,
+          "row": 0,
+          "src": "0750/tile-8-0.png",
+          "bytes": 24995
+        },
+        {
+          "column": 9,
+          "row": 0,
+          "src": "0750/tile-9-0.png",
+          "bytes": 100838
+        },
+        {
+          "column": 10,
+          "row": 0,
+          "src": "0750/tile-10-0.png",
+          "bytes": 41225
+        },
+        {
+          "column": 11,
+          "row": 0,
+          "src": "0750/tile-11-0.png",
+          "bytes": 7105
+        },
+        {
+          "column": 12,
+          "row": 0,
+          "src": "0750/tile-12-0.png",
+          "bytes": 7105
+        },
+        {
+          "column": 13,
+          "row": 0,
+          "src": "0750/tile-13-0.png",
+          "bytes": 7105
+        },
+        {
+          "column": 14,
+          "row": 0,
+          "src": "0750/tile-14-0.png",
+          "bytes": 7105
+        },
+        {
+          "column": 15,
+          "row": 0,
+          "src": "0750/tile-15-0.png",
+          "bytes": 7105
+        },
+        {
+          "column": 16,
+          "row": 0,
+          "src": "0750/tile-16-0.png",
+          "bytes": 7105
+        },
+        {
+          "column": 0,
+          "row": 1,
+          "src": "0750/tile-0-1.png",
+          "bytes": 7105
+        },
+        {
+          "column": 1,
+          "row": 1,
+          "src": "0750/tile-1-1.png",
+          "bytes": 7105
+        },
+        {
+          "column": 2,
+          "row": 1,
+          "src": "0750/tile-2-1.png",
+          "bytes": 16010
+        },
+        {
+          "column": 3,
+          "row": 1,
+          "src": "0750/tile-3-1.png",
+          "bytes": 17257
+        },
+        {
+          "column": 4,
+          "row": 1,
+          "src": "0750/tile-4-1.png",
+          "bytes": 10762
+        },
+        {
+          "column": 5,
+          "row": 1,
+          "src": "0750/tile-5-1.png",
+          "bytes": 7105
+        },
+        {
+          "column": 6,
+          "row": 1,
+          "src": "0750/tile-6-1.png",
+          "bytes": 113753
+        },
+        {
+          "column": 7,
+          "row": 1,
+          "src": "0750/tile-7-1.png",
+          "bytes": 154646
+        },
+        {
+          "column": 8,
+          "row": 1,
+          "src": "0750/tile-8-1.png",
+          "bytes": 40678
+        },
+        {
+          "column": 9,
+          "row": 1,
+          "src": "0750/tile-9-1.png",
+          "bytes": 132618
+        },
+        {
+          "column": 10,
+          "row": 1,
+          "src": "0750/tile-10-1.png",
+          "bytes": 65844
+        },
+        {
+          "column": 11,
+          "row": 1,
+          "src": "0750/tile-11-1.png",
+          "bytes": 106286
+        },
+        {
+          "column": 12,
+          "row": 1,
+          "src": "0750/tile-12-1.png",
+          "bytes": 118379
+        },
+        {
+          "column": 13,
+          "row": 1,
+          "src": "0750/tile-13-1.png",
+          "bytes": 74089
+        },
+        {
+          "column": 14,
+          "row": 1,
+          "src": "0750/tile-14-1.png",
+          "bytes": 7105
+        },
+        {
+          "column": 15,
+          "row": 1,
+          "src": "0750/tile-15-1.png",
+          "bytes": 7105
+        },
+        {
+          "column": 16,
+          "row": 1,
+          "src": "0750/tile-16-1.png",
+          "bytes": 7105
+        },
+        {
+          "column": 0,
+          "row": 2,
+          "src": "0750/tile-0-2.png",
+          "bytes": 7105
+        },
+        {
+          "column": 1,
+          "row": 2,
+          "src": "0750/tile-1-2.png",
+          "bytes": 7105
+        },
+        {
+          "column": 2,
+          "row": 2,
+          "src": "0750/tile-2-2.png",
+          "bytes": 225109
+        },
+        {
+          "column": 3,
+          "row": 2,
+          "src": "0750/tile-3-2.png",
+          "bytes": 265086
+        },
+        {
+          "column": 4,
+          "row": 2,
+          "src": "0750/tile-4-2.png",
+          "bytes": 272278
+        },
+        {
+          "column": 5,
+          "row": 2,
+          "src": "0750/tile-5-2.png",
+          "bytes": 112938
+        },
+        {
+          "column": 6,
+          "row": 2,
+          "src": "0750/tile-6-2.png",
+          "bytes": 96973
+        },
+        {
+          "column": 7,
+          "row": 2,
+          "src": "0750/tile-7-2.png",
+          "bytes": 121081
+        },
+        {
+          "column": 8,
+          "row": 2,
+          "src": "0750/tile-8-2.png",
+          "bytes": 83148
+        },
+        {
+          "column": 9,
+          "row": 2,
+          "src": "0750/tile-9-2.png",
+          "bytes": 33507
+        },
+        {
+          "column": 10,
+          "row": 2,
+          "src": "0750/tile-10-2.png",
+          "bytes": 53859
+        },
+        {
+          "column": 11,
+          "row": 2,
+          "src": "0750/tile-11-2.png",
+          "bytes": 137376
+        },
+        {
+          "column": 12,
+          "row": 2,
+          "src": "0750/tile-12-2.png",
+          "bytes": 179598
+        },
+        {
+          "column": 13,
+          "row": 2,
+          "src": "0750/tile-13-2.png",
+          "bytes": 120216
+        },
+        {
+          "column": 14,
+          "row": 2,
+          "src": "0750/tile-14-2.png",
+          "bytes": 7105
+        },
+        {
+          "column": 15,
+          "row": 2,
+          "src": "0750/tile-15-2.png",
+          "bytes": 7105
+        },
+        {
+          "column": 16,
+          "row": 2,
+          "src": "0750/tile-16-2.png",
+          "bytes": 7105
+        },
+        {
+          "column": 0,
+          "row": 3,
+          "src": "0750/tile-0-3.png",
+          "bytes": 7105
+        },
+        {
+          "column": 1,
+          "row": 3,
+          "src": "0750/tile-1-3.png",
+          "bytes": 7105
+        },
+        {
+          "column": 2,
+          "row": 3,
+          "src": "0750/tile-2-3.png",
+          "bytes": 143593
+        },
+        {
+          "column": 3,
+          "row": 3,
+          "src": "0750/tile-3-3.png",
+          "bytes": 170933
+        },
+        {
+          "column": 4,
+          "row": 3,
+          "src": "0750/tile-4-3.png",
+          "bytes": 174633
+        },
+        {
+          "column": 5,
+          "row": 3,
+          "src": "0750/tile-5-3.png",
+          "bytes": 125502
+        },
+        {
+          "column": 6,
+          "row": 3,
+          "src": "0750/tile-6-3.png",
+          "bytes": 95476
+        },
+        {
+          "column": 7,
+          "row": 3,
+          "src": "0750/tile-7-3.png",
+          "bytes": 100504
+        },
+        {
+          "column": 8,
+          "row": 3,
+          "src": "0750/tile-8-3.png",
+          "bytes": 95686
+        },
+        {
+          "column": 9,
+          "row": 3,
+          "src": "0750/tile-9-3.png",
+          "bytes": 37739
+        },
+        {
+          "column": 10,
+          "row": 3,
+          "src": "0750/tile-10-3.png",
+          "bytes": 85437
+        },
+        {
+          "column": 11,
+          "row": 3,
+          "src": "0750/tile-11-3.png",
+          "bytes": 137579
+        },
+        {
+          "column": 12,
+          "row": 3,
+          "src": "0750/tile-12-3.png",
+          "bytes": 125466
+        },
+        {
+          "column": 13,
+          "row": 3,
+          "src": "0750/tile-13-3.png",
+          "bytes": 78032
+        },
+        {
+          "column": 14,
+          "row": 3,
+          "src": "0750/tile-14-3.png",
+          "bytes": 7105
+        },
+        {
+          "column": 15,
+          "row": 3,
+          "src": "0750/tile-15-3.png",
+          "bytes": 7105
+        },
+        {
+          "column": 16,
+          "row": 3,
+          "src": "0750/tile-16-3.png",
+          "bytes": 7105
+        },
+        {
+          "column": 0,
+          "row": 4,
+          "src": "0750/tile-0-4.png",
+          "bytes": 7105
+        },
+        {
+          "column": 1,
+          "row": 4,
+          "src": "0750/tile-1-4.png",
+          "bytes": 7105
+        },
+        {
+          "column": 2,
+          "row": 4,
+          "src": "0750/tile-2-4.png",
+          "bytes": 116172
+        },
+        {
+          "column": 3,
+          "row": 4,
+          "src": "0750/tile-3-4.png",
+          "bytes": 229874
+        },
+        {
+          "column": 4,
+          "row": 4,
+          "src": "0750/tile-4-4.png",
+          "bytes": 197741
+        },
+        {
+          "column": 5,
+          "row": 4,
+          "src": "0750/tile-5-4.png",
+          "bytes": 144818
+        },
+        {
+          "column": 6,
+          "row": 4,
+          "src": "0750/tile-6-4.png",
+          "bytes": 172627
+        },
+        {
+          "column": 7,
+          "row": 4,
+          "src": "0750/tile-7-4.png",
+          "bytes": 189002
+        },
+        {
+          "column": 8,
+          "row": 4,
+          "src": "0750/tile-8-4.png",
+          "bytes": 128840
+        },
+        {
+          "column": 9,
+          "row": 4,
+          "src": "0750/tile-9-4.png",
+          "bytes": 101833
+        },
+        {
+          "column": 10,
+          "row": 4,
+          "src": "0750/tile-10-4.png",
+          "bytes": 75121
+        },
+        {
+          "column": 11,
+          "row": 4,
+          "src": "0750/tile-11-4.png",
+          "bytes": 55374
+        },
+        {
+          "column": 12,
+          "row": 4,
+          "src": "0750/tile-12-4.png",
+          "bytes": 26523
+        },
+        {
+          "column": 13,
+          "row": 4,
+          "src": "0750/tile-13-4.png",
+          "bytes": 65876
+        },
+        {
+          "column": 14,
+          "row": 4,
+          "src": "0750/tile-14-4.png",
+          "bytes": 134868
+        },
+        {
+          "column": 15,
+          "row": 4,
+          "src": "0750/tile-15-4.png",
+          "bytes": 82859
+        },
+        {
+          "column": 16,
+          "row": 4,
+          "src": "0750/tile-16-4.png",
+          "bytes": 7105
+        },
+        {
+          "column": 0,
+          "row": 5,
+          "src": "0750/tile-0-5.png",
+          "bytes": 15495
+        },
+        {
+          "column": 1,
+          "row": 5,
+          "src": "0750/tile-1-5.png",
+          "bytes": 22338
+        },
+        {
+          "column": 2,
+          "row": 5,
+          "src": "0750/tile-2-5.png",
+          "bytes": 20924
+        },
+        {
+          "column": 3,
+          "row": 5,
+          "src": "0750/tile-3-5.png",
+          "bytes": 22127
+        },
+        {
+          "column": 4,
+          "row": 5,
+          "src": "0750/tile-4-5.png",
+          "bytes": 66521
+        },
+        {
+          "column": 5,
+          "row": 5,
+          "src": "0750/tile-5-5.png",
+          "bytes": 80847
+        },
+        {
+          "column": 6,
+          "row": 5,
+          "src": "0750/tile-6-5.png",
+          "bytes": 151968
+        },
+        {
+          "column": 7,
+          "row": 5,
+          "src": "0750/tile-7-5.png",
+          "bytes": 221255
+        },
+        {
+          "column": 8,
+          "row": 5,
+          "src": "0750/tile-8-5.png",
+          "bytes": 253065
+        },
+        {
+          "column": 9,
+          "row": 5,
+          "src": "0750/tile-9-5.png",
+          "bytes": 135820
+        },
+        {
+          "column": 10,
+          "row": 5,
+          "src": "0750/tile-10-5.png",
+          "bytes": 76883
+        },
+        {
+          "column": 11,
+          "row": 5,
+          "src": "0750/tile-11-5.png",
+          "bytes": 82850
+        },
+        {
+          "column": 12,
+          "row": 5,
+          "src": "0750/tile-12-5.png",
+          "bytes": 69465
+        },
+        {
+          "column": 13,
+          "row": 5,
+          "src": "0750/tile-13-5.png",
+          "bytes": 74248
+        },
+        {
+          "column": 14,
+          "row": 5,
+          "src": "0750/tile-14-5.png",
+          "bytes": 41819
+        },
+        {
+          "column": 15,
+          "row": 5,
+          "src": "0750/tile-15-5.png",
+          "bytes": 15753
+        },
+        {
+          "column": 16,
+          "row": 5,
+          "src": "0750/tile-16-5.png",
+          "bytes": 7105
+        },
+        {
+          "column": 0,
+          "row": 6,
+          "src": "0750/tile-0-6.png",
+          "bytes": 175062
+        },
+        {
+          "column": 1,
+          "row": 6,
+          "src": "0750/tile-1-6.png",
+          "bytes": 138400
+        },
+        {
+          "column": 2,
+          "row": 6,
+          "src": "0750/tile-2-6.png",
+          "bytes": 159630
+        },
+        {
+          "column": 3,
+          "row": 6,
+          "src": "0750/tile-3-6.png",
+          "bytes": 156333
+        },
+        {
+          "column": 4,
+          "row": 6,
+          "src": "0750/tile-4-6.png",
+          "bytes": 94596
+        },
+        {
+          "column": 5,
+          "row": 6,
+          "src": "0750/tile-5-6.png",
+          "bytes": 138754
+        },
+        {
+          "column": 6,
+          "row": 6,
+          "src": "0750/tile-6-6.png",
+          "bytes": 207535
+        },
+        {
+          "column": 7,
+          "row": 6,
+          "src": "0750/tile-7-6.png",
+          "bytes": 223378
+        },
+        {
+          "column": 8,
+          "row": 6,
+          "src": "0750/tile-8-6.png",
+          "bytes": 206714
+        },
+        {
+          "column": 9,
+          "row": 6,
+          "src": "0750/tile-9-6.png",
+          "bytes": 211638
+        },
+        {
+          "column": 10,
+          "row": 6,
+          "src": "0750/tile-10-6.png",
+          "bytes": 138126
+        },
+        {
+          "column": 11,
+          "row": 6,
+          "src": "0750/tile-11-6.png",
+          "bytes": 64674
+        },
+        {
+          "column": 12,
+          "row": 6,
+          "src": "0750/tile-12-6.png",
+          "bytes": 81708
+        },
+        {
+          "column": 13,
+          "row": 6,
+          "src": "0750/tile-13-6.png",
+          "bytes": 77437
+        },
+        {
+          "column": 14,
+          "row": 6,
+          "src": "0750/tile-14-6.png",
+          "bytes": 128457
+        },
+        {
+          "column": 15,
+          "row": 6,
+          "src": "0750/tile-15-6.png",
+          "bytes": 102128
+        },
+        {
+          "column": 16,
+          "row": 6,
+          "src": "0750/tile-16-6.png",
+          "bytes": 8099
+        },
+        {
+          "column": 0,
+          "row": 7,
+          "src": "0750/tile-0-7.png",
+          "bytes": 35660
+        },
+        {
+          "column": 1,
+          "row": 7,
+          "src": "0750/tile-1-7.png",
+          "bytes": 7105
+        },
+        {
+          "column": 2,
+          "row": 7,
+          "src": "0750/tile-2-7.png",
+          "bytes": 26121
+        },
+        {
+          "column": 3,
+          "row": 7,
+          "src": "0750/tile-3-7.png",
+          "bytes": 76886
+        },
+        {
+          "column": 4,
+          "row": 7,
+          "src": "0750/tile-4-7.png",
+          "bytes": 157058
+        },
+        {
+          "column": 5,
+          "row": 7,
+          "src": "0750/tile-5-7.png",
+          "bytes": 183626
+        },
+        {
+          "column": 6,
+          "row": 7,
+          "src": "0750/tile-6-7.png",
+          "bytes": 234314
+        },
+        {
+          "column": 7,
+          "row": 7,
+          "src": "0750/tile-7-7.png",
+          "bytes": 144690
+        },
+        {
+          "column": 8,
+          "row": 7,
+          "src": "0750/tile-8-7.png",
+          "bytes": 199083
+        },
+        {
+          "column": 9,
+          "row": 7,
+          "src": "0750/tile-9-7.png",
+          "bytes": 153760
+        },
+        {
+          "column": 10,
+          "row": 7,
+          "src": "0750/tile-10-7.png",
+          "bytes": 188236
+        },
+        {
+          "column": 11,
+          "row": 7,
+          "src": "0750/tile-11-7.png",
+          "bytes": 145870
+        },
+        {
+          "column": 12,
+          "row": 7,
+          "src": "0750/tile-12-7.png",
+          "bytes": 128241
+        },
+        {
+          "column": 13,
+          "row": 7,
+          "src": "0750/tile-13-7.png",
+          "bytes": 84606
+        },
+        {
+          "column": 14,
+          "row": 7,
+          "src": "0750/tile-14-7.png",
+          "bytes": 38132
+        },
+        {
+          "column": 15,
+          "row": 7,
+          "src": "0750/tile-15-7.png",
+          "bytes": 22285
+        },
+        {
+          "column": 16,
+          "row": 7,
+          "src": "0750/tile-16-7.png",
+          "bytes": 7497
+        },
+        {
+          "column": 0,
+          "row": 8,
+          "src": "0750/tile-0-8.png",
+          "bytes": 39816
+        },
+        {
+          "column": 1,
+          "row": 8,
+          "src": "0750/tile-1-8.png",
+          "bytes": 50177
+        },
+        {
+          "column": 2,
+          "row": 8,
+          "src": "0750/tile-2-8.png",
+          "bytes": 70651
+        },
+        {
+          "column": 3,
+          "row": 8,
+          "src": "0750/tile-3-8.png",
+          "bytes": 107100
+        },
+        {
+          "column": 4,
+          "row": 8,
+          "src": "0750/tile-4-8.png",
+          "bytes": 98348
+        },
+        {
+          "column": 5,
+          "row": 8,
+          "src": "0750/tile-5-8.png",
+          "bytes": 152241
+        },
+        {
+          "column": 6,
+          "row": 8,
+          "src": "0750/tile-6-8.png",
+          "bytes": 247914
+        },
+        {
+          "column": 7,
+          "row": 8,
+          "src": "0750/tile-7-8.png",
+          "bytes": 133308
+        },
+        {
+          "column": 8,
+          "row": 8,
+          "src": "0750/tile-8-8.png",
+          "bytes": 190780
+        },
+        {
+          "column": 9,
+          "row": 8,
+          "src": "0750/tile-9-8.png",
+          "bytes": 193523
+        },
+        {
+          "column": 10,
+          "row": 8,
+          "src": "0750/tile-10-8.png",
+          "bytes": 172094
+        },
+        {
+          "column": 11,
+          "row": 8,
+          "src": "0750/tile-11-8.png",
+          "bytes": 101996
+        },
+        {
+          "column": 12,
+          "row": 8,
+          "src": "0750/tile-12-8.png",
+          "bytes": 78200
+        },
+        {
+          "column": 13,
+          "row": 8,
+          "src": "0750/tile-13-8.png",
+          "bytes": 79385
+        },
+        {
+          "column": 14,
+          "row": 8,
+          "src": "0750/tile-14-8.png",
+          "bytes": 126419
+        },
+        {
+          "column": 15,
+          "row": 8,
+          "src": "0750/tile-15-8.png",
+          "bytes": 99369
+        },
+        {
+          "column": 16,
+          "row": 8,
+          "src": "0750/tile-16-8.png",
+          "bytes": 25113
+        },
+        {
+          "column": 0,
+          "row": 9,
+          "src": "0750/tile-0-9.png",
+          "bytes": 213137
+        },
+        {
+          "column": 1,
+          "row": 9,
+          "src": "0750/tile-1-9.png",
+          "bytes": 243301
+        },
+        {
+          "column": 2,
+          "row": 9,
+          "src": "0750/tile-2-9.png",
+          "bytes": 252319
+        },
+        {
+          "column": 3,
+          "row": 9,
+          "src": "0750/tile-3-9.png",
+          "bytes": 256725
+        },
+        {
+          "column": 4,
+          "row": 9,
+          "src": "0750/tile-4-9.png",
+          "bytes": 97814
+        },
+        {
+          "column": 5,
+          "row": 9,
+          "src": "0750/tile-5-9.png",
+          "bytes": 120301
+        },
+        {
+          "column": 6,
+          "row": 9,
+          "src": "0750/tile-6-9.png",
+          "bytes": 102190
+        },
+        {
+          "column": 7,
+          "row": 9,
+          "src": "0750/tile-7-9.png",
+          "bytes": 177738
+        },
+        {
+          "column": 8,
+          "row": 9,
+          "src": "0750/tile-8-9.png",
+          "bytes": 186037
+        },
+        {
+          "column": 9,
+          "row": 9,
+          "src": "0750/tile-9-9.png",
+          "bytes": 252330
+        },
+        {
+          "column": 10,
+          "row": 9,
+          "src": "0750/tile-10-9.png",
+          "bytes": 171508
+        },
+        {
+          "column": 11,
+          "row": 9,
+          "src": "0750/tile-11-9.png",
+          "bytes": 97870
+        },
+        {
+          "column": 12,
+          "row": 9,
+          "src": "0750/tile-12-9.png",
+          "bytes": 27970
+        },
+        {
+          "column": 13,
+          "row": 9,
+          "src": "0750/tile-13-9.png",
+          "bytes": 33906
+        },
+        {
+          "column": 14,
+          "row": 9,
+          "src": "0750/tile-14-9.png",
+          "bytes": 31515
+        },
+        {
+          "column": 15,
+          "row": 9,
+          "src": "0750/tile-15-9.png",
+          "bytes": 10028
+        },
+        {
+          "column": 16,
+          "row": 9,
+          "src": "0750/tile-16-9.png",
+          "bytes": 7105
+        },
+        {
+          "column": 0,
+          "row": 10,
+          "src": "0750/tile-0-10.png",
+          "bytes": 161015
+        },
+        {
+          "column": 1,
+          "row": 10,
+          "src": "0750/tile-1-10.png",
+          "bytes": 203835
+        },
+        {
+          "column": 2,
+          "row": 10,
+          "src": "0750/tile-2-10.png",
+          "bytes": 159235
+        },
+        {
+          "column": 3,
+          "row": 10,
+          "src": "0750/tile-3-10.png",
+          "bytes": 148686
+        },
+        {
+          "column": 4,
+          "row": 10,
+          "src": "0750/tile-4-10.png",
+          "bytes": 84292
+        },
+        {
+          "column": 5,
+          "row": 10,
+          "src": "0750/tile-5-10.png",
+          "bytes": 47730
+        },
+        {
+          "column": 6,
+          "row": 10,
+          "src": "0750/tile-6-10.png",
+          "bytes": 79279
+        },
+        {
+          "column": 7,
+          "row": 10,
+          "src": "0750/tile-7-10.png",
+          "bytes": 55327
+        },
+        {
+          "column": 8,
+          "row": 10,
+          "src": "0750/tile-8-10.png",
+          "bytes": 91158
+        },
+        {
+          "column": 9,
+          "row": 10,
+          "src": "0750/tile-9-10.png",
+          "bytes": 158353
+        },
+        {
+          "column": 10,
+          "row": 10,
+          "src": "0750/tile-10-10.png",
+          "bytes": 84269
+        },
+        {
+          "column": 11,
+          "row": 10,
+          "src": "0750/tile-11-10.png",
+          "bytes": 107460
+        },
+        {
+          "column": 12,
+          "row": 10,
+          "src": "0750/tile-12-10.png",
+          "bytes": 57232
+        },
+        {
+          "column": 13,
+          "row": 10,
+          "src": "0750/tile-13-10.png",
+          "bytes": 43649
+        },
+        {
+          "column": 14,
+          "row": 10,
+          "src": "0750/tile-14-10.png",
+          "bytes": 126105
+        },
+        {
+          "column": 15,
+          "row": 10,
+          "src": "0750/tile-15-10.png",
+          "bytes": 46792
+        },
+        {
+          "column": 16,
+          "row": 10,
+          "src": "0750/tile-16-10.png",
+          "bytes": 7105
+        },
+        {
+          "column": 0,
+          "row": 11,
+          "src": "0750/tile-0-11.png",
+          "bytes": 7105
+        },
+        {
+          "column": 1,
+          "row": 11,
+          "src": "0750/tile-1-11.png",
+          "bytes": 7105
+        },
+        {
+          "column": 2,
+          "row": 11,
+          "src": "0750/tile-2-11.png",
+          "bytes": 9074
+        },
+        {
+          "column": 3,
+          "row": 11,
+          "src": "0750/tile-3-11.png",
+          "bytes": 54443
+        },
+        {
+          "column": 4,
+          "row": 11,
+          "src": "0750/tile-4-11.png",
+          "bytes": 93244
+        },
+        {
+          "column": 5,
+          "row": 11,
+          "src": "0750/tile-5-11.png",
+          "bytes": 59140
+        },
+        {
+          "column": 6,
+          "row": 11,
+          "src": "0750/tile-6-11.png",
+          "bytes": 30691
+        },
+        {
+          "column": 7,
+          "row": 11,
+          "src": "0750/tile-7-11.png",
+          "bytes": 31586
+        },
+        {
+          "column": 8,
+          "row": 11,
+          "src": "0750/tile-8-11.png",
+          "bytes": 109334
+        },
+        {
+          "column": 9,
+          "row": 11,
+          "src": "0750/tile-9-11.png",
+          "bytes": 49575
+        },
+        {
+          "column": 10,
+          "row": 11,
+          "src": "0750/tile-10-11.png",
+          "bytes": 58152
+        },
+        {
+          "column": 11,
+          "row": 11,
+          "src": "0750/tile-11-11.png",
+          "bytes": 84107
+        },
+        {
+          "column": 12,
+          "row": 11,
+          "src": "0750/tile-12-11.png",
+          "bytes": 99957
+        },
+        {
+          "column": 13,
+          "row": 11,
+          "src": "0750/tile-13-11.png",
+          "bytes": 47077
+        },
+        {
+          "column": 14,
+          "row": 11,
+          "src": "0750/tile-14-11.png",
+          "bytes": 27158
+        },
+        {
+          "column": 15,
+          "row": 11,
+          "src": "0750/tile-15-11.png",
+          "bytes": 25547
+        },
+        {
+          "column": 16,
+          "row": 11,
+          "src": "0750/tile-16-11.png",
+          "bytes": 7105
+        },
+        {
+          "column": 0,
+          "row": 12,
+          "src": "0750/tile-0-12.png",
+          "bytes": 7105
+        },
+        {
+          "column": 1,
+          "row": 12,
+          "src": "0750/tile-1-12.png",
+          "bytes": 7105
+        },
+        {
+          "column": 2,
+          "row": 12,
+          "src": "0750/tile-2-12.png",
+          "bytes": 17829
+        },
+        {
+          "column": 3,
+          "row": 12,
+          "src": "0750/tile-3-12.png",
+          "bytes": 129367
+        },
+        {
+          "column": 4,
+          "row": 12,
+          "src": "0750/tile-4-12.png",
+          "bytes": 161394
+        },
+        {
+          "column": 5,
+          "row": 12,
+          "src": "0750/tile-5-12.png",
+          "bytes": 15186
+        },
+        {
+          "column": 6,
+          "row": 12,
+          "src": "0750/tile-6-12.png",
+          "bytes": 46719
+        },
+        {
+          "column": 7,
+          "row": 12,
+          "src": "0750/tile-7-12.png",
+          "bytes": 56549
+        },
+        {
+          "column": 8,
+          "row": 12,
+          "src": "0750/tile-8-12.png",
+          "bytes": 64624
+        },
+        {
+          "column": 9,
+          "row": 12,
+          "src": "0750/tile-9-12.png",
+          "bytes": 46937
+        },
+        {
+          "column": 10,
+          "row": 12,
+          "src": "0750/tile-10-12.png",
+          "bytes": 27702
+        },
+        {
+          "column": 11,
+          "row": 12,
+          "src": "0750/tile-11-12.png",
+          "bytes": 135149
+        },
+        {
+          "column": 12,
+          "row": 12,
+          "src": "0750/tile-12-12.png",
+          "bytes": 255315
+        },
+        {
+          "column": 13,
+          "row": 12,
+          "src": "0750/tile-13-12.png",
+          "bytes": 156766
+        },
+        {
+          "column": 14,
+          "row": 12,
+          "src": "0750/tile-14-12.png",
+          "bytes": 7105
+        },
+        {
+          "column": 15,
+          "row": 12,
+          "src": "0750/tile-15-12.png",
+          "bytes": 7105
+        },
+        {
+          "column": 16,
+          "row": 12,
+          "src": "0750/tile-16-12.png",
+          "bytes": 7105
+        },
+        {
+          "column": 0,
+          "row": 13,
+          "src": "0750/tile-0-13.png",
+          "bytes": 7105
+        },
+        {
+          "column": 1,
+          "row": 13,
+          "src": "0750/tile-1-13.png",
+          "bytes": 7105
+        },
+        {
+          "column": 2,
+          "row": 13,
+          "src": "0750/tile-2-13.png",
+          "bytes": 12030
+        },
+        {
+          "column": 3,
+          "row": 13,
+          "src": "0750/tile-3-13.png",
+          "bytes": 104675
+        },
+        {
+          "column": 4,
+          "row": 13,
+          "src": "0750/tile-4-13.png",
+          "bytes": 15794
+        },
+        {
+          "column": 5,
+          "row": 13,
+          "src": "0750/tile-5-13.png",
+          "bytes": 39034
+        },
+        {
+          "column": 6,
+          "row": 13,
+          "src": "0750/tile-6-13.png",
+          "bytes": 79392
+        },
+        {
+          "column": 7,
+          "row": 13,
+          "src": "0750/tile-7-13.png",
+          "bytes": 51580
+        },
+        {
+          "column": 8,
+          "row": 13,
+          "src": "0750/tile-8-13.png",
+          "bytes": 48940
+        },
+        {
+          "column": 9,
+          "row": 13,
+          "src": "0750/tile-9-13.png",
+          "bytes": 50083
+        },
+        {
+          "column": 10,
+          "row": 13,
+          "src": "0750/tile-10-13.png",
+          "bytes": 36843
+        },
+        {
+          "column": 11,
+          "row": 13,
+          "src": "0750/tile-11-13.png",
+          "bytes": 104191
+        },
+        {
+          "column": 12,
+          "row": 13,
+          "src": "0750/tile-12-13.png",
+          "bytes": 182639
+        },
+        {
+          "column": 13,
+          "row": 13,
+          "src": "0750/tile-13-13.png",
+          "bytes": 58847
+        },
+        {
+          "column": 14,
+          "row": 13,
+          "src": "0750/tile-14-13.png",
+          "bytes": 7105
+        },
+        {
+          "column": 15,
+          "row": 13,
+          "src": "0750/tile-15-13.png",
+          "bytes": 7105
+        },
+        {
+          "column": 16,
+          "row": 13,
+          "src": "0750/tile-16-13.png",
+          "bytes": 7105
+        },
+        {
+          "column": 0,
+          "row": 14,
+          "src": "0750/tile-0-14.png",
+          "bytes": 7105
+        },
+        {
+          "column": 1,
+          "row": 14,
+          "src": "0750/tile-1-14.png",
+          "bytes": 7105
+        },
+        {
+          "column": 2,
+          "row": 14,
+          "src": "0750/tile-2-14.png",
+          "bytes": 7105
+        },
+        {
+          "column": 3,
+          "row": 14,
+          "src": "0750/tile-3-14.png",
+          "bytes": 7105
+        },
+        {
+          "column": 4,
+          "row": 14,
+          "src": "0750/tile-4-14.png",
+          "bytes": 7105
+        },
+        {
+          "column": 5,
+          "row": 14,
+          "src": "0750/tile-5-14.png",
+          "bytes": 32761
+        },
+        {
+          "column": 6,
+          "row": 14,
+          "src": "0750/tile-6-14.png",
+          "bytes": 76493
+        },
+        {
+          "column": 7,
+          "row": 14,
+          "src": "0750/tile-7-14.png",
+          "bytes": 35839
+        },
+        {
+          "column": 8,
+          "row": 14,
+          "src": "0750/tile-8-14.png",
+          "bytes": 65747
+        },
+        {
+          "column": 9,
+          "row": 14,
+          "src": "0750/tile-9-14.png",
+          "bytes": 80817
+        },
+        {
+          "column": 10,
+          "row": 14,
+          "src": "0750/tile-10-14.png",
+          "bytes": 139903
+        },
+        {
+          "column": 11,
+          "row": 14,
+          "src": "0750/tile-11-14.png",
+          "bytes": 34880
+        },
+        {
+          "column": 12,
+          "row": 14,
+          "src": "0750/tile-12-14.png",
+          "bytes": 58465
+        },
+        {
+          "column": 13,
+          "row": 14,
+          "src": "0750/tile-13-14.png",
+          "bytes": 7105
+        },
+        {
+          "column": 14,
+          "row": 14,
+          "src": "0750/tile-14-14.png",
+          "bytes": 7105
+        },
+        {
+          "column": 15,
+          "row": 14,
+          "src": "0750/tile-15-14.png",
+          "bytes": 7105
+        },
+        {
+          "column": 16,
+          "row": 14,
+          "src": "0750/tile-16-14.png",
+          "bytes": 7105
+        },
+        {
+          "column": 0,
+          "row": 15,
+          "src": "0750/tile-0-15.png",
+          "bytes": 7105
+        },
+        {
+          "column": 1,
+          "row": 15,
+          "src": "0750/tile-1-15.png",
+          "bytes": 7105
+        },
+        {
+          "column": 2,
+          "row": 15,
+          "src": "0750/tile-2-15.png",
+          "bytes": 7105
+        },
+        {
+          "column": 3,
+          "row": 15,
+          "src": "0750/tile-3-15.png",
+          "bytes": 7105
+        },
+        {
+          "column": 4,
+          "row": 15,
+          "src": "0750/tile-4-15.png",
+          "bytes": 7105
+        },
+        {
+          "column": 5,
+          "row": 15,
+          "src": "0750/tile-5-15.png",
+          "bytes": 24811
+        },
+        {
+          "column": 6,
+          "row": 15,
+          "src": "0750/tile-6-15.png",
+          "bytes": 33028
+        },
+        {
+          "column": 7,
+          "row": 15,
+          "src": "0750/tile-7-15.png",
+          "bytes": 7105
+        },
+        {
+          "column": 8,
+          "row": 15,
+          "src": "0750/tile-8-15.png",
+          "bytes": 29428
+        },
+        {
+          "column": 9,
+          "row": 15,
+          "src": "0750/tile-9-15.png",
+          "bytes": 11856
+        },
+        {
+          "column": 10,
+          "row": 15,
+          "src": "0750/tile-10-15.png",
+          "bytes": 29340
+        },
+        {
+          "column": 11,
+          "row": 15,
+          "src": "0750/tile-11-15.png",
+          "bytes": 7105
+        },
+        {
+          "column": 12,
+          "row": 15,
+          "src": "0750/tile-12-15.png",
+          "bytes": 7105
+        },
+        {
+          "column": 13,
+          "row": 15,
+          "src": "0750/tile-13-15.png",
+          "bytes": 7105
+        },
+        {
+          "column": 14,
+          "row": 15,
+          "src": "0750/tile-14-15.png",
+          "bytes": 7105
+        },
+        {
+          "column": 15,
+          "row": 15,
+          "src": "0750/tile-15-15.png",
+          "bytes": 7105
+        },
+        {
+          "column": 16,
+          "row": 15,
+          "src": "0750/tile-16-15.png",
           "bytes": 7105
         }
       ],
