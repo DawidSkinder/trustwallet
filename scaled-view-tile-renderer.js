@@ -2,8 +2,8 @@
   const stage = document.querySelector(".stage");
   const canvas = document.querySelector("[data-scaled-view-canvas]");
   const params = new URLSearchParams(window.location.search);
-  const desktopManifestUrl = "data/generated/scaled-view-tiles/manifest.json?v=20260518-testimonial-font-ready-1";
-  const mobileManifestUrl = "data/generated/scaled-view-tiles/mobile-manifest.json?v=20260518-testimonial-font-ready-1";
+  const desktopManifestUrl = "data/generated/scaled-view-tiles/manifest.json?v=20260518-render-hash-drift-1";
+  const mobileManifestUrl = "data/generated/scaled-view-tiles/mobile-manifest.json?v=20260518-render-hash-drift-1";
   const mobileTileMediaQuery = window.matchMedia("(max-width: 1025px), (pointer: coarse)");
   const preloadPadding = 1;
   const allowIncomplete = params.has("scaledViewAllowIncomplete");
@@ -50,6 +50,7 @@
     active: false,
     disabled: disabledByQuery,
     disableReason: disabledByQuery ? disabledReason : "",
+    didRetrySourceVersionMismatch: false,
     debugBadge: null,
     diagnostics: {
       active: false,
@@ -80,6 +81,11 @@
       activeTagFilter: null,
       drawMs: 0,
       sourceVersionStatus: "unchecked",
+      renderHashStatus: "unchecked",
+      capturedRenderHash: "",
+      currentRenderHash: "",
+      manifestRefreshReason: "",
+      manifestRefreshCount: 0,
       fallbackReason: canvas ? "manifest-not-loaded" : "missing-canvas",
       error: "",
     },
@@ -346,18 +352,6 @@
       return { current: false, status: "data-content-hash-mismatch" };
     }
 
-    if (!state.manifest?.source?.renderHash) {
-      return { current: false, status: "missing-captured-render-hash" };
-    }
-
-    if (!window.__ds2026RenderManifest?.renderHash) {
-      return { current: false, status: "waiting-for-current-render-hash" };
-    }
-
-    if (state.manifest.source.renderHash !== window.__ds2026RenderManifest.renderHash) {
-      return { current: false, status: "render-hash-mismatch" };
-    }
-
     if (!areAssetRefsEqual(captured.stylesheets, current.stylesheets)) {
       return { current: false, status: "stylesheet-version-mismatch" };
     }
@@ -366,7 +360,29 @@
       return { current: false, status: "script-version-mismatch" };
     }
 
-    return { current: true, status: "current" };
+    const capturedRenderHash = state.manifest?.source?.renderHash ?? "";
+    const currentRenderHash = window.__ds2026RenderManifest?.renderHash ?? "";
+    const renderHashStatus =
+      capturedRenderHash && currentRenderHash && capturedRenderHash !== currentRenderHash
+        ? "render-hash-drift"
+        : "current";
+
+    return {
+      current: true,
+      status: "current",
+      renderHashStatus,
+      capturedRenderHash,
+      currentRenderHash,
+    };
+  }
+
+  function shouldRefreshManifestForSourceStatus(sourceVersionStatus) {
+    return [
+      "data-or-render-manifest-version-mismatch",
+      "data-content-hash-mismatch",
+      "stylesheet-version-mismatch",
+      "script-version-mismatch",
+    ].includes(sourceVersionStatus.status);
   }
 
   function getOverlayCards() {
@@ -944,10 +960,36 @@
     const sourceVersionStatus = getSourceVersionStatus();
 
     if (!sourceVersionStatus.current) {
+      if (shouldRefreshManifestForSourceStatus(sourceVersionStatus) && !state.didRetrySourceVersionMismatch) {
+        state.didRetrySourceVersionMismatch = true;
+        setActive(false, `refreshing-manifest-after-${sourceVersionStatus.status}`);
+        updateDiagnostics({
+          ...getEmptyOverlayDiagnostics(),
+          sourceVersionStatus: sourceVersionStatus.status,
+          renderHashStatus: sourceVersionStatus.renderHashStatus ?? "unchecked",
+          capturedRenderHash: sourceVersionStatus.capturedRenderHash ?? state.manifest?.source?.renderHash ?? "",
+          currentRenderHash: sourceVersionStatus.currentRenderHash ?? window.__ds2026RenderManifest?.renderHash ?? "",
+          manifestRefreshReason: sourceVersionStatus.status,
+          manifestRefreshCount: state.diagnostics.manifestRefreshCount + 1,
+          levelId: "",
+          level: null,
+          visibleTileCount: 0,
+          drawnTileCount: 0,
+          missingVisibleTiles: 0,
+          pendingVisibleTiles: 0,
+          drawMs: Math.round((performance.now() - startedAt) * 10) / 10,
+        });
+        loadManifest({ forceFresh: true, retryReason: sourceVersionStatus.status });
+        return;
+      }
+
       setActive(false, sourceVersionStatus.status);
       updateDiagnostics({
         ...getEmptyOverlayDiagnostics(),
         sourceVersionStatus: sourceVersionStatus.status,
+        renderHashStatus: sourceVersionStatus.renderHashStatus ?? "unchecked",
+        capturedRenderHash: sourceVersionStatus.capturedRenderHash ?? state.manifest?.source?.renderHash ?? "",
+        currentRenderHash: sourceVersionStatus.currentRenderHash ?? window.__ds2026RenderManifest?.renderHash ?? "",
         levelId: "",
         level: null,
         visibleTileCount: 0,
@@ -969,6 +1011,9 @@
       updateDiagnostics({
         ...getEmptyOverlayDiagnostics(),
         sourceVersionStatus: sourceVersionStatus.status,
+        renderHashStatus: sourceVersionStatus.renderHashStatus ?? "unchecked",
+        capturedRenderHash: sourceVersionStatus.capturedRenderHash ?? state.manifest?.source?.renderHash ?? "",
+        currentRenderHash: sourceVersionStatus.currentRenderHash ?? window.__ds2026RenderManifest?.renderHash ?? "",
         levelId: "",
         level: null,
         visibleTileCount: 0,
@@ -1008,6 +1053,9 @@
       updateDiagnostics({
         ...getEmptyOverlayDiagnostics(),
         sourceVersionStatus: sourceVersionStatus.status,
+        renderHashStatus: sourceVersionStatus.renderHashStatus ?? "unchecked",
+        capturedRenderHash: sourceVersionStatus.capturedRenderHash ?? state.manifest?.source?.renderHash ?? "",
+        currentRenderHash: sourceVersionStatus.currentRenderHash ?? window.__ds2026RenderManifest?.renderHash ?? "",
         levelId: selectedLevel.id ?? "",
         level: selectedLevel.level,
         tileSize: selectedLevel.tileSize,
@@ -1062,6 +1110,9 @@
     setActive(canActivate, canActivate ? "" : "visible-tiles-loading");
     updateDiagnostics({
       sourceVersionStatus: sourceVersionStatus.status,
+      renderHashStatus: sourceVersionStatus.renderHashStatus ?? "unchecked",
+      capturedRenderHash: sourceVersionStatus.capturedRenderHash ?? state.manifest?.source?.renderHash ?? "",
+      currentRenderHash: sourceVersionStatus.currentRenderHash ?? window.__ds2026RenderManifest?.renderHash ?? "",
       levelId: selectedLevel.id ?? "",
       level: selectedLevel.level,
       tileSize: selectedLevel.tileSize,
@@ -1395,16 +1446,18 @@
     setScaledTagFilter(kind, value);
   }
 
-  async function loadManifest() {
+  async function loadManifest(options = {}) {
     if (!canvas) {
       return;
     }
 
+    const shouldForceFresh = Boolean(options.forceFresh) || forceFreshManifest;
     const nextProfile = getTileProfile();
     const nextManifestUrl = getManifestUrlForProfile(nextProfile);
 
     if (state.manifestUrl !== nextManifestUrl) {
       state.imageCache.clear();
+      state.didRetrySourceVersionMismatch = false;
     }
 
     state.tileProfile = nextProfile;
@@ -1414,11 +1467,17 @@
       tileProfile: state.tileProfile,
       fallbackReason: "manifest-loading",
       sourceVersionStatus: "unchecked",
+      manifestRefreshReason: options.retryReason || "",
     });
 
     try {
-      const requestOptions = forceFreshManifest ? { cache: "no-store" } : {};
-      const response = await fetch(state.manifestUrl, requestOptions);
+      const manifestRequestUrl = new URL(state.manifestUrl, window.location.href);
+      if (shouldForceFresh) {
+        manifestRequestUrl.searchParams.set("_fresh", String(Date.now()));
+      }
+
+      const requestOptions = shouldForceFresh ? { cache: "no-store" } : {};
+      const response = await fetch(manifestRequestUrl, requestOptions);
 
       if (!response.ok) {
         throw new Error(`Manifest request failed with ${response.status}.`);
