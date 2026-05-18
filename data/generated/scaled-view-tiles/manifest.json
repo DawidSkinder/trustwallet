@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-18T11:02:54.544Z",
+  "generatedAt": "2026-05-18T11:18:55.853Z",
   "generator": "scripts/generate-scaled-view-tiles.mjs",
   "profile": "desktop",
   "tileSize": 512,
@@ -31,7 +31,7 @@
         "app.js?v=20260514-mobile-zoom-55-1",
         "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",
         "canvas-data.js?v=20260518-testimonial-9-1",
-        "scaled-view-tile-renderer.js?v=20260514-mobile-hires-tiles-1",
+        "scaled-view-tile-renderer.js?v=20260518-testimonial-font-ready-1",
         "map-card.js?v=20260421-mobile-safe-nav-1",
         "card-connections.js?v=20260421-mobile-safe-nav-1"
       ]
