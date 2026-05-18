@@ -2,8 +2,8 @@
   const stage = document.querySelector(".stage");
   const canvas = document.querySelector("[data-scaled-view-canvas]");
   const params = new URLSearchParams(window.location.search);
-  const desktopManifestUrl = "data/generated/scaled-view-tiles/manifest.json?v=20260514-tile-capture-fix-1";
-  const mobileManifestUrl = "data/generated/scaled-view-tiles/mobile-manifest.json?v=20260514-mobile-hires-tiles-1";
+  const desktopManifestUrl = "data/generated/scaled-view-tiles/manifest.json?v=20260518-testimonial-9-tiles-1";
+  const mobileManifestUrl = "data/generated/scaled-view-tiles/mobile-manifest.json?v=20260518-testimonial-9-tiles-1";
   const mobileTileMediaQuery = window.matchMedia("(max-width: 1025px), (pointer: coarse)");
   const preloadPadding = 1;
   const allowIncomplete = params.has("scaledViewAllowIncomplete");
