@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-14T14:24:15.406Z",
+  "generatedAt": "2026-05-18T10:48:56.715Z",
   "generator": "scripts/generate-scaled-view-tiles.mjs",
   "profile": "mobile",
   "tileSize": 512,
@@ -11,15 +11,15 @@
     "bounds": {
       "x": 0,
       "y": 0,
-      "width": 11299,
-      "height": 10709
+      "width": 11260,
+      "height": 10726
     },
     "renderManifestVersion": "20260514-scaled-view-tiles-1",
-    "renderHash": "d12dec05",
+    "renderHash": "a4648e5e",
     "sourceVersions": {
       "data": "20260422-testimonial-card-1",
       "dataContentHashes": {
-        "data/001-evidence-map.csv": "2af9cf8e68d4a86e6cbcdfa7bf3f0af5e7ed55de2b151a247678f2d63ccd6425"
+        "data/001-evidence-map.csv": "6e7e21af2b50b3ecadde8f30b190acaa18adce6c562c7ae3c10f91e0d45a29a9"
       },
       "renderManifest": "20260514-scaled-view-tiles-1",
       "stylesheets": [
@@ -30,25 +30,25 @@
         "infinite-canvas.js?v=20260424-viewport-fit-1",
         "app.js?v=20260514-mobile-zoom-55-1",
         "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",
-        "canvas-data.js?v=20260514-mobile-skip-intro-1",
+        "canvas-data.js?v=20260518-challenge-masonry-1",
         "scaled-view-tile-renderer.js?v=20260514-mobile-hires-tiles-1",
         "map-card.js?v=20260421-mobile-safe-nav-1",
         "card-connections.js?v=20260421-mobile-safe-nav-1"
       ]
     },
-    "cardCount": 125,
+    "cardCount": 128,
     "clusterTitleCount": 14,
-    "connectionCount": 304
+    "connectionCount": 325
   },
   "levels": [
     {
       "level": 0.5,
       "label": "50%",
-      "scaledWidth": 5650,
-      "scaledHeight": 5355,
-      "columns": 12,
+      "scaledWidth": 5630,
+      "scaledHeight": 5363,
+      "columns": 11,
       "rows": 11,
-      "tileCount": 132,
+      "tileCount": 121,
       "id": "0500",
       "tiles": [
         {
@@ -79,48 +79,42 @@
           "column": 4,
           "row": 0,
           "src": "0500/tile-4-0.png",
-          "bytes": 147843
+          "bytes": 127835
         },
         {
           "column": 5,
           "row": 0,
           "src": "0500/tile-5-0.png",
-          "bytes": 91316
+          "bytes": 110674
         },
         {
           "column": 6,
           "row": 0,
           "src": "0500/tile-6-0.png",
-          "bytes": 135691
+          "bytes": 125962
         },
         {
           "column": 7,
           "row": 0,
           "src": "0500/tile-7-0.png",
-          "bytes": 14035
+          "bytes": 15383
         },
         {
           "column": 8,
           "row": 0,
           "src": "0500/tile-8-0.png",
-          "bytes": 16260
+          "bytes": 11391
         },
         {
           "column": 9,
           "row": 0,
           "src": "0500/tile-9-0.png",
-          "bytes": 7383
+          "bytes": 7105
         },
         {
           "column": 10,
           "row": 0,
           "src": "0500/tile-10-0.png",
-          "bytes": 7105
-        },
-        {
-          "column": 11,
-          "row": 0,
-          "src": "0500/tile-11-0.png",
           "bytes": 7105
         },
         {
@@ -133,66 +127,60 @@
           "column": 1,
           "row": 1,
           "src": "0500/tile-1-1.png",
-          "bytes": 125152
+          "bytes": 113426
         },
         {
           "column": 2,
           "row": 1,
           "src": "0500/tile-2-1.png",
-          "bytes": 216837
+          "bytes": 238644
         },
         {
           "column": 3,
           "row": 1,
           "src": "0500/tile-3-1.png",
-          "bytes": 131694
+          "bytes": 157179
         },
         {
           "column": 4,
           "row": 1,
           "src": "0500/tile-4-1.png",
-          "bytes": 155682
+          "bytes": 142640
         },
         {
           "column": 5,
           "row": 1,
           "src": "0500/tile-5-1.png",
-          "bytes": 107613
+          "bytes": 116696
         },
         {
           "column": 6,
           "row": 1,
           "src": "0500/tile-6-1.png",
-          "bytes": 89734
+          "bytes": 93854
         },
         {
           "column": 7,
           "row": 1,
           "src": "0500/tile-7-1.png",
-          "bytes": 141193
+          "bytes": 128264
         },
         {
           "column": 8,
           "row": 1,
           "src": "0500/tile-8-1.png",
-          "bytes": 233469
+          "bytes": 216674
         },
         {
           "column": 9,
           "row": 1,
           "src": "0500/tile-9-1.png",
-          "bytes": 20564
+          "bytes": 24181
         },
         {
           "column": 10,
           "row": 1,
           "src": "0500/tile-10-1.png",
-          "bytes": 7105
-        },
-        {
-          "column": 11,
-          "row": 1,
-          "src": "0500/tile-11-1.png",
           "bytes": 7105
         },
         {
@@ -205,427 +193,391 @@
           "column": 1,
           "row": 2,
           "src": "0500/tile-1-2.png",
-          "bytes": 133396
+          "bytes": 106290
         },
         {
           "column": 2,
           "row": 2,
           "src": "0500/tile-2-2.png",
-          "bytes": 275184
+          "bytes": 273960
         },
         {
           "column": 3,
           "row": 2,
           "src": "0500/tile-3-2.png",
-          "bytes": 201783
+          "bytes": 218980
         },
         {
           "column": 4,
           "row": 2,
           "src": "0500/tile-4-2.png",
-          "bytes": 162428
+          "bytes": 163804
         },
         {
           "column": 5,
           "row": 2,
           "src": "0500/tile-5-2.png",
-          "bytes": 126767
+          "bytes": 128372
         },
         {
           "column": 6,
           "row": 2,
           "src": "0500/tile-6-2.png",
-          "bytes": 85453
+          "bytes": 83412
         },
         {
           "column": 7,
           "row": 2,
           "src": "0500/tile-7-2.png",
-          "bytes": 130808
+          "bytes": 136687
         },
         {
           "column": 8,
           "row": 2,
           "src": "0500/tile-8-2.png",
-          "bytes": 106562
+          "bytes": 126522
         },
         {
           "column": 9,
           "row": 2,
           "src": "0500/tile-9-2.png",
-          "bytes": 46586
+          "bytes": 37581
         },
         {
           "column": 10,
           "row": 2,
           "src": "0500/tile-10-2.png",
-          "bytes": 10423
-        },
-        {
-          "column": 11,
-          "row": 2,
-          "src": "0500/tile-11-2.png",
-          "bytes": 7105
+          "bytes": 7347
         },
         {
           "column": 0,
           "row": 3,
           "src": "0500/tile-0-3.png",
-          "bytes": 17262
+          "bytes": 42134
         },
         {
           "column": 1,
           "row": 3,
           "src": "0500/tile-1-3.png",
-          "bytes": 27258
+          "bytes": 70075
         },
         {
           "column": 2,
           "row": 3,
           "src": "0500/tile-2-3.png",
-          "bytes": 69945
+          "bytes": 75828
         },
         {
           "column": 3,
           "row": 3,
           "src": "0500/tile-3-3.png",
-          "bytes": 120720
+          "bytes": 129213
         },
         {
           "column": 4,
           "row": 3,
           "src": "0500/tile-4-3.png",
-          "bytes": 230110
+          "bytes": 241127
         },
         {
           "column": 5,
           "row": 3,
           "src": "0500/tile-5-3.png",
-          "bytes": 286160
+          "bytes": 291080
         },
         {
           "column": 6,
           "row": 3,
           "src": "0500/tile-6-3.png",
-          "bytes": 141421
+          "bytes": 140642
         },
         {
           "column": 7,
           "row": 3,
           "src": "0500/tile-7-3.png",
-          "bytes": 92131
+          "bytes": 95929
         },
         {
           "column": 8,
           "row": 3,
           "src": "0500/tile-8-3.png",
-          "bytes": 79589
+          "bytes": 78624
         },
         {
           "column": 9,
           "row": 3,
           "src": "0500/tile-9-3.png",
-          "bytes": 109677
+          "bytes": 125982
         },
         {
           "column": 10,
           "row": 3,
           "src": "0500/tile-10-3.png",
-          "bytes": 46735
-        },
-        {
-          "column": 11,
-          "row": 3,
-          "src": "0500/tile-11-3.png",
-          "bytes": 7105
+          "bytes": 46214
         },
         {
           "column": 0,
           "row": 4,
           "src": "0500/tile-0-4.png",
-          "bytes": 148839
+          "bytes": 160137
         },
         {
           "column": 1,
           "row": 4,
           "src": "0500/tile-1-4.png",
-          "bytes": 141014
+          "bytes": 262562
         },
         {
           "column": 2,
           "row": 4,
           "src": "0500/tile-2-4.png",
-          "bytes": 163343
+          "bytes": 214085
         },
         {
           "column": 3,
           "row": 4,
           "src": "0500/tile-3-4.png",
-          "bytes": 182653
+          "bytes": 196897
         },
         {
           "column": 4,
           "row": 4,
           "src": "0500/tile-4-4.png",
-          "bytes": 269543
+          "bytes": 279132
         },
         {
           "column": 5,
           "row": 4,
           "src": "0500/tile-5-4.png",
-          "bytes": 252568
+          "bytes": 275860
         },
         {
           "column": 6,
           "row": 4,
           "src": "0500/tile-6-4.png",
-          "bytes": 245863
+          "bytes": 263461
         },
         {
           "column": 7,
           "row": 4,
           "src": "0500/tile-7-4.png",
-          "bytes": 139058
+          "bytes": 137246
         },
         {
           "column": 8,
           "row": 4,
           "src": "0500/tile-8-4.png",
-          "bytes": 109936
+          "bytes": 112156
         },
         {
           "column": 9,
           "row": 4,
           "src": "0500/tile-9-4.png",
-          "bytes": 132418
+          "bytes": 136397
         },
         {
           "column": 10,
           "row": 4,
           "src": "0500/tile-10-4.png",
-          "bytes": 72010
-        },
-        {
-          "column": 11,
-          "row": 4,
-          "src": "0500/tile-11-4.png",
-          "bytes": 7105
+          "bytes": 69767
         },
         {
           "column": 0,
           "row": 5,
           "src": "0500/tile-0-5.png",
-          "bytes": 41808
+          "bytes": 33379
         },
         {
           "column": 1,
           "row": 5,
           "src": "0500/tile-1-5.png",
-          "bytes": 60647
+          "bytes": 52576
         },
         {
           "column": 2,
           "row": 5,
           "src": "0500/tile-2-5.png",
-          "bytes": 131243
+          "bytes": 136148
         },
         {
           "column": 3,
           "row": 5,
           "src": "0500/tile-3-5.png",
-          "bytes": 191227
+          "bytes": 236434
         },
         {
           "column": 4,
           "row": 5,
           "src": "0500/tile-4-5.png",
-          "bytes": 276076
+          "bytes": 302928
         },
         {
           "column": 5,
           "row": 5,
           "src": "0500/tile-5-5.png",
-          "bytes": 221465
+          "bytes": 243662
         },
         {
           "column": 6,
           "row": 5,
           "src": "0500/tile-6-5.png",
-          "bytes": 211219
+          "bytes": 211760
         },
         {
           "column": 7,
           "row": 5,
           "src": "0500/tile-7-5.png",
-          "bytes": 192107
+          "bytes": 192902
         },
         {
           "column": 8,
           "row": 5,
           "src": "0500/tile-8-5.png",
-          "bytes": 127492
+          "bytes": 133815
         },
         {
           "column": 9,
           "row": 5,
           "src": "0500/tile-9-5.png",
-          "bytes": 108552
+          "bytes": 111907
         },
         {
           "column": 10,
           "row": 5,
           "src": "0500/tile-10-5.png",
-          "bytes": 69477
-        },
-        {
-          "column": 11,
-          "row": 5,
-          "src": "0500/tile-11-5.png",
-          "bytes": 7105
+          "bytes": 65117
         },
         {
           "column": 0,
           "row": 6,
           "src": "0500/tile-0-6.png",
-          "bytes": 300571
+          "bytes": 261645
         },
         {
           "column": 1,
           "row": 6,
           "src": "0500/tile-1-6.png",
-          "bytes": 282832
+          "bytes": 269042
         },
         {
           "column": 2,
           "row": 6,
           "src": "0500/tile-2-6.png",
-          "bytes": 232036
+          "bytes": 226446
         },
         {
           "column": 3,
           "row": 6,
           "src": "0500/tile-3-6.png",
-          "bytes": 121776
+          "bytes": 128397
         },
         {
           "column": 4,
           "row": 6,
           "src": "0500/tile-4-6.png",
-          "bytes": 161850
+          "bytes": 167524
         },
         {
           "column": 5,
           "row": 6,
           "src": "0500/tile-5-6.png",
-          "bytes": 177798
+          "bytes": 197889
         },
         {
           "column": 6,
           "row": 6,
           "src": "0500/tile-6-6.png",
-          "bytes": 278593
+          "bytes": 275943
         },
         {
           "column": 7,
           "row": 6,
           "src": "0500/tile-7-6.png",
-          "bytes": 135357
+          "bytes": 135778
         },
         {
           "column": 8,
           "row": 6,
           "src": "0500/tile-8-6.png",
-          "bytes": 52075
+          "bytes": 53144
         },
         {
           "column": 9,
           "row": 6,
           "src": "0500/tile-9-6.png",
-          "bytes": 65825
+          "bytes": 65116
         },
         {
           "column": 10,
           "row": 6,
           "src": "0500/tile-10-6.png",
-          "bytes": 21937
-        },
-        {
-          "column": 11,
-          "row": 6,
-          "src": "0500/tile-11-6.png",
-          "bytes": 7105
+          "bytes": 21642
         },
         {
           "column": 0,
           "row": 7,
           "src": "0500/tile-0-7.png",
-          "bytes": 35181
+          "bytes": 89647
         },
         {
           "column": 1,
           "row": 7,
           "src": "0500/tile-1-7.png",
-          "bytes": 27163
+          "bytes": 62519
         },
         {
           "column": 2,
           "row": 7,
           "src": "0500/tile-2-7.png",
-          "bytes": 89821
+          "bytes": 99662
         },
         {
           "column": 3,
           "row": 7,
           "src": "0500/tile-3-7.png",
-          "bytes": 90805
+          "bytes": 89032
         },
         {
           "column": 4,
           "row": 7,
           "src": "0500/tile-4-7.png",
-          "bytes": 53045
+          "bytes": 55544
         },
         {
           "column": 5,
           "row": 7,
           "src": "0500/tile-5-7.png",
-          "bytes": 105792
+          "bytes": 106899
         },
         {
           "column": 6,
           "row": 7,
           "src": "0500/tile-6-7.png",
-          "bytes": 83151
+          "bytes": 79261
         },
         {
           "column": 7,
           "row": 7,
           "src": "0500/tile-7-7.png",
-          "bytes": 111144
+          "bytes": 112655
         },
         {
           "column": 8,
           "row": 7,
           "src": "0500/tile-8-7.png",
-          "bytes": 96218
+          "bytes": 99781
         },
         {
           "column": 9,
           "row": 7,
           "src": "0500/tile-9-7.png",
-          "bytes": 67685
+          "bytes": 68810
         },
         {
           "column": 10,
           "row": 7,
           "src": "0500/tile-10-7.png",
-          "bytes": 30859
-        },
-        {
-          "column": 11,
-          "row": 7,
-          "src": "0500/tile-11-7.png",
-          "bytes": 7105
+          "bytes": 29815
         },
         {
           "column": 0,
@@ -637,66 +589,60 @@
           "column": 1,
           "row": 8,
           "src": "0500/tile-1-8.png",
-          "bytes": 16394
+          "bytes": 7105
         },
         {
           "column": 2,
           "row": 8,
           "src": "0500/tile-2-8.png",
-          "bytes": 153371
+          "bytes": 167330
         },
         {
           "column": 3,
           "row": 8,
           "src": "0500/tile-3-8.png",
-          "bytes": 79315
+          "bytes": 82701
         },
         {
           "column": 4,
           "row": 8,
           "src": "0500/tile-4-8.png",
-          "bytes": 73278
+          "bytes": 67038
         },
         {
           "column": 5,
           "row": 8,
           "src": "0500/tile-5-8.png",
-          "bytes": 74950
+          "bytes": 81390
         },
         {
           "column": 6,
           "row": 8,
           "src": "0500/tile-6-8.png",
-          "bytes": 49465
+          "bytes": 46805
         },
         {
           "column": 7,
           "row": 8,
           "src": "0500/tile-7-8.png",
-          "bytes": 112716
+          "bytes": 104820
         },
         {
           "column": 8,
           "row": 8,
           "src": "0500/tile-8-8.png",
-          "bytes": 247121
+          "bytes": 247749
         },
         {
           "column": 9,
           "row": 8,
           "src": "0500/tile-9-8.png",
-          "bytes": 43497
+          "bytes": 46009
         },
         {
           "column": 10,
           "row": 8,
           "src": "0500/tile-10-8.png",
-          "bytes": 7105
-        },
-        {
-          "column": 11,
-          "row": 8,
-          "src": "0500/tile-11-8.png",
           "bytes": 7105
         },
         {
@@ -715,60 +661,54 @@
           "column": 2,
           "row": 9,
           "src": "0500/tile-2-9.png",
-          "bytes": 12676
+          "bytes": 21981
         },
         {
           "column": 3,
           "row": 9,
           "src": "0500/tile-3-9.png",
-          "bytes": 32482
+          "bytes": 29691
         },
         {
           "column": 4,
           "row": 9,
           "src": "0500/tile-4-9.png",
-          "bytes": 89506
+          "bytes": 88202
         },
         {
           "column": 5,
           "row": 9,
           "src": "0500/tile-5-9.png",
-          "bytes": 61911
+          "bytes": 68209
         },
         {
           "column": 6,
           "row": 9,
           "src": "0500/tile-6-9.png",
-          "bytes": 144160
+          "bytes": 136819
         },
         {
           "column": 7,
           "row": 9,
           "src": "0500/tile-7-9.png",
-          "bytes": 57035
+          "bytes": 58461
         },
         {
           "column": 8,
           "row": 9,
           "src": "0500/tile-8-9.png",
-          "bytes": 85233
+          "bytes": 85211
         },
         {
           "column": 9,
           "row": 9,
           "src": "0500/tile-9-9.png",
-          "bytes": 7419
+          "bytes": 7350
         },
         {
           "column": 10,
           "row": 9,
           "src": "0500/tile-10-9.png",
-          "bytes": 7105
-        },
-        {
-          "column": 11,
-          "row": 9,
-          "src": "0500/tile-11-9.png",
           "bytes": 7105
         },
         {
@@ -793,31 +733,31 @@
           "column": 3,
           "row": 10,
           "src": "0500/tile-3-10.png",
-          "bytes": 17298
+          "bytes": 18996
         },
         {
           "column": 4,
           "row": 10,
           "src": "0500/tile-4-10.png",
-          "bytes": 20906
+          "bytes": 26937
         },
         {
           "column": 5,
           "row": 10,
           "src": "0500/tile-5-10.png",
-          "bytes": 21294
+          "bytes": 21293
         },
         {
           "column": 6,
           "row": 10,
           "src": "0500/tile-6-10.png",
-          "bytes": 22569
+          "bytes": 24427
         },
         {
           "column": 7,
           "row": 10,
           "src": "0500/tile-7-10.png",
-          "bytes": 7386
+          "bytes": 8857
         },
         {
           "column": 8,
@@ -836,12 +776,6 @@
           "row": 10,
           "src": "0500/tile-10-10.png",
           "bytes": 7105
-        },
-        {
-          "column": 11,
-          "row": 10,
-          "src": "0500/tile-11-10.png",
-          "bytes": 7105
         }
       ],
       "complete": true
@@ -849,8 +783,8 @@
     {
       "level": 0.75,
       "label": "75%",
-      "scaledWidth": 8475,
-      "scaledHeight": 8032,
+      "scaledWidth": 8445,
+      "scaledHeight": 8045,
       "columns": 17,
       "rows": 16,
       "tileCount": 272,
@@ -896,31 +830,31 @@
           "column": 6,
           "row": 0,
           "src": "0750/tile-6-0.png",
-          "bytes": 89951
+          "bytes": 80068
         },
         {
           "column": 7,
           "row": 0,
           "src": "0750/tile-7-0.png",
-          "bytes": 155808
+          "bytes": 146426
         },
         {
           "column": 8,
           "row": 0,
           "src": "0750/tile-8-0.png",
-          "bytes": 24995
+          "bytes": 44241
         },
         {
           "column": 9,
           "row": 0,
           "src": "0750/tile-9-0.png",
-          "bytes": 100838
+          "bytes": 92873
         },
         {
           "column": 10,
           "row": 0,
           "src": "0750/tile-10-0.png",
-          "bytes": 41225
+          "bytes": 41858
         },
         {
           "column": 11,
@@ -974,73 +908,73 @@
           "column": 2,
           "row": 1,
           "src": "0750/tile-2-1.png",
-          "bytes": 16010
+          "bytes": 22349
         },
         {
           "column": 3,
           "row": 1,
           "src": "0750/tile-3-1.png",
-          "bytes": 17257
+          "bytes": 24048
         },
         {
           "column": 4,
           "row": 1,
           "src": "0750/tile-4-1.png",
-          "bytes": 10762
+          "bytes": 19797
         },
         {
           "column": 5,
           "row": 1,
           "src": "0750/tile-5-1.png",
-          "bytes": 7105
+          "bytes": 10461
         },
         {
           "column": 6,
           "row": 1,
           "src": "0750/tile-6-1.png",
-          "bytes": 113753
+          "bytes": 97835
         },
         {
           "column": 7,
           "row": 1,
           "src": "0750/tile-7-1.png",
-          "bytes": 154646
+          "bytes": 152301
         },
         {
           "column": 8,
           "row": 1,
           "src": "0750/tile-8-1.png",
-          "bytes": 40678
+          "bytes": 58417
         },
         {
           "column": 9,
           "row": 1,
           "src": "0750/tile-9-1.png",
-          "bytes": 132618
+          "bytes": 138214
         },
         {
           "column": 10,
           "row": 1,
           "src": "0750/tile-10-1.png",
-          "bytes": 65844
+          "bytes": 72681
         },
         {
           "column": 11,
           "row": 1,
           "src": "0750/tile-11-1.png",
-          "bytes": 106286
+          "bytes": 76401
         },
         {
           "column": 12,
           "row": 1,
           "src": "0750/tile-12-1.png",
-          "bytes": 118379
+          "bytes": 95523
         },
         {
           "column": 13,
           "row": 1,
           "src": "0750/tile-13-1.png",
-          "bytes": 74089
+          "bytes": 56601
         },
         {
           "column": 14,
@@ -1076,73 +1010,73 @@
           "column": 2,
           "row": 2,
           "src": "0750/tile-2-2.png",
-          "bytes": 225109
+          "bytes": 193198
         },
         {
           "column": 3,
           "row": 2,
           "src": "0750/tile-3-2.png",
-          "bytes": 265086
+          "bytes": 280720
         },
         {
           "column": 4,
           "row": 2,
           "src": "0750/tile-4-2.png",
-          "bytes": 272278
+          "bytes": 276849
         },
         {
           "column": 5,
           "row": 2,
           "src": "0750/tile-5-2.png",
-          "bytes": 112938
+          "bytes": 158550
         },
         {
           "column": 6,
           "row": 2,
           "src": "0750/tile-6-2.png",
-          "bytes": 96973
+          "bytes": 82825
         },
         {
           "column": 7,
           "row": 2,
           "src": "0750/tile-7-2.png",
-          "bytes": 121081
+          "bytes": 124043
         },
         {
           "column": 8,
           "row": 2,
           "src": "0750/tile-8-2.png",
-          "bytes": 83148
+          "bytes": 92716
         },
         {
           "column": 9,
           "row": 2,
           "src": "0750/tile-9-2.png",
-          "bytes": 33507
+          "bytes": 36091
         },
         {
           "column": 10,
           "row": 2,
           "src": "0750/tile-10-2.png",
-          "bytes": 53859
+          "bytes": 55158
         },
         {
           "column": 11,
           "row": 2,
           "src": "0750/tile-11-2.png",
-          "bytes": 137376
+          "bytes": 135105
         },
         {
           "column": 12,
           "row": 2,
           "src": "0750/tile-12-2.png",
-          "bytes": 179598
+          "bytes": 182619
         },
         {
           "column": 13,
           "row": 2,
           "src": "0750/tile-13-2.png",
-          "bytes": 120216
+          "bytes": 121134
         },
         {
           "column": 14,
@@ -1178,73 +1112,73 @@
           "column": 2,
           "row": 3,
           "src": "0750/tile-2-3.png",
-          "bytes": 143593
+          "bytes": 135960
         },
         {
           "column": 3,
           "row": 3,
           "src": "0750/tile-3-3.png",
-          "bytes": 170933
+          "bytes": 207752
         },
         {
           "column": 4,
           "row": 3,
           "src": "0750/tile-4-3.png",
-          "bytes": 174633
+          "bytes": 229848
         },
         {
           "column": 5,
           "row": 3,
           "src": "0750/tile-5-3.png",
-          "bytes": 125502
+          "bytes": 141476
         },
         {
           "column": 6,
           "row": 3,
           "src": "0750/tile-6-3.png",
-          "bytes": 95476
+          "bytes": 93640
         },
         {
           "column": 7,
           "row": 3,
           "src": "0750/tile-7-3.png",
-          "bytes": 100504
+          "bytes": 103895
         },
         {
           "column": 8,
           "row": 3,
           "src": "0750/tile-8-3.png",
-          "bytes": 95686
+          "bytes": 97481
         },
         {
           "column": 9,
           "row": 3,
           "src": "0750/tile-9-3.png",
-          "bytes": 37739
+          "bytes": 34462
         },
         {
           "column": 10,
           "row": 3,
           "src": "0750/tile-10-3.png",
-          "bytes": 85437
+          "bytes": 81942
         },
         {
           "column": 11,
           "row": 3,
           "src": "0750/tile-11-3.png",
-          "bytes": 137579
+          "bytes": 150178
         },
         {
           "column": 12,
           "row": 3,
           "src": "0750/tile-12-3.png",
-          "bytes": 125466
+          "bytes": 151468
         },
         {
           "column": 13,
           "row": 3,
           "src": "0750/tile-13-3.png",
-          "bytes": 78032
+          "bytes": 104081
         },
         {
           "column": 14,
@@ -1280,85 +1214,85 @@
           "column": 2,
           "row": 4,
           "src": "0750/tile-2-4.png",
-          "bytes": 116172
+          "bytes": 64152
         },
         {
           "column": 3,
           "row": 4,
           "src": "0750/tile-3-4.png",
-          "bytes": 229874
+          "bytes": 159918
         },
         {
           "column": 4,
           "row": 4,
           "src": "0750/tile-4-4.png",
-          "bytes": 197741
+          "bytes": 162501
         },
         {
           "column": 5,
           "row": 4,
           "src": "0750/tile-5-4.png",
-          "bytes": 144818
+          "bytes": 137868
         },
         {
           "column": 6,
           "row": 4,
           "src": "0750/tile-6-4.png",
-          "bytes": 172627
+          "bytes": 173948
         },
         {
           "column": 7,
           "row": 4,
           "src": "0750/tile-7-4.png",
-          "bytes": 189002
+          "bytes": 192610
         },
         {
           "column": 8,
           "row": 4,
           "src": "0750/tile-8-4.png",
-          "bytes": 128840
+          "bytes": 125630
         },
         {
           "column": 9,
           "row": 4,
           "src": "0750/tile-9-4.png",
-          "bytes": 101833
+          "bytes": 104479
         },
         {
           "column": 10,
           "row": 4,
           "src": "0750/tile-10-4.png",
-          "bytes": 75121
+          "bytes": 77387
         },
         {
           "column": 11,
           "row": 4,
           "src": "0750/tile-11-4.png",
-          "bytes": 55374
+          "bytes": 56397
         },
         {
           "column": 12,
           "row": 4,
           "src": "0750/tile-12-4.png",
-          "bytes": 26523
+          "bytes": 27200
         },
         {
           "column": 13,
           "row": 4,
           "src": "0750/tile-13-4.png",
-          "bytes": 65876
+          "bytes": 61465
         },
         {
           "column": 14,
           "row": 4,
           "src": "0750/tile-14-4.png",
-          "bytes": 134868
+          "bytes": 123737
         },
         {
           "column": 15,
           "row": 4,
           "src": "0750/tile-15-4.png",
-          "bytes": 82859
+          "bytes": 67154
         },
         {
           "column": 16,
@@ -1370,97 +1304,97 @@
           "column": 0,
           "row": 5,
           "src": "0750/tile-0-5.png",
-          "bytes": 15495
+          "bytes": 27216
         },
         {
           "column": 1,
           "row": 5,
           "src": "0750/tile-1-5.png",
-          "bytes": 22338
+          "bytes": 74843
         },
         {
           "column": 2,
           "row": 5,
           "src": "0750/tile-2-5.png",
-          "bytes": 20924
+          "bytes": 79208
         },
         {
           "column": 3,
           "row": 5,
           "src": "0750/tile-3-5.png",
-          "bytes": 22127
+          "bytes": 53523
         },
         {
           "column": 4,
           "row": 5,
           "src": "0750/tile-4-5.png",
-          "bytes": 66521
+          "bytes": 78284
         },
         {
           "column": 5,
           "row": 5,
           "src": "0750/tile-5-5.png",
-          "bytes": 80847
+          "bytes": 98996
         },
         {
           "column": 6,
           "row": 5,
           "src": "0750/tile-6-5.png",
-          "bytes": 151968
+          "bytes": 168221
         },
         {
           "column": 7,
           "row": 5,
           "src": "0750/tile-7-5.png",
-          "bytes": 221255
+          "bytes": 230345
         },
         {
           "column": 8,
           "row": 5,
           "src": "0750/tile-8-5.png",
-          "bytes": 253065
+          "bytes": 262197
         },
         {
           "column": 9,
           "row": 5,
           "src": "0750/tile-9-5.png",
-          "bytes": 135820
+          "bytes": 131653
         },
         {
           "column": 10,
           "row": 5,
           "src": "0750/tile-10-5.png",
-          "bytes": 76883
+          "bytes": 76959
         },
         {
           "column": 11,
           "row": 5,
           "src": "0750/tile-11-5.png",
-          "bytes": 82850
+          "bytes": 85864
         },
         {
           "column": 12,
           "row": 5,
           "src": "0750/tile-12-5.png",
-          "bytes": 69465
+          "bytes": 70311
         },
         {
           "column": 13,
           "row": 5,
           "src": "0750/tile-13-5.png",
-          "bytes": 74248
+          "bytes": 78100
         },
         {
           "column": 14,
           "row": 5,
           "src": "0750/tile-14-5.png",
-          "bytes": 41819
+          "bytes": 52318
         },
         {
           "column": 15,
           "row": 5,
           "src": "0750/tile-15-5.png",
-          "bytes": 15753
+          "bytes": 25901
         },
         {
           "column": 16,
@@ -1472,403 +1406,403 @@
           "column": 0,
           "row": 6,
           "src": "0750/tile-0-6.png",
-          "bytes": 175062
+          "bytes": 87133
         },
         {
           "column": 1,
           "row": 6,
           "src": "0750/tile-1-6.png",
-          "bytes": 138400
+          "bytes": 222870
         },
         {
           "column": 2,
           "row": 6,
           "src": "0750/tile-2-6.png",
-          "bytes": 159630
+          "bytes": 314890
         },
         {
           "column": 3,
           "row": 6,
           "src": "0750/tile-3-6.png",
-          "bytes": 156333
+          "bytes": 193058
         },
         {
           "column": 4,
           "row": 6,
           "src": "0750/tile-4-6.png",
-          "bytes": 94596
+          "bytes": 114678
         },
         {
           "column": 5,
           "row": 6,
           "src": "0750/tile-5-6.png",
-          "bytes": 138754
+          "bytes": 150469
         },
         {
           "column": 6,
           "row": 6,
           "src": "0750/tile-6-6.png",
-          "bytes": 207535
+          "bytes": 220988
         },
         {
           "column": 7,
           "row": 6,
           "src": "0750/tile-7-6.png",
-          "bytes": 223378
+          "bytes": 247443
         },
         {
           "column": 8,
           "row": 6,
           "src": "0750/tile-8-6.png",
-          "bytes": 206714
+          "bytes": 228859
         },
         {
           "column": 9,
           "row": 6,
           "src": "0750/tile-9-6.png",
-          "bytes": 211638
+          "bytes": 234260
         },
         {
           "column": 10,
           "row": 6,
           "src": "0750/tile-10-6.png",
-          "bytes": 138126
+          "bytes": 137199
         },
         {
           "column": 11,
           "row": 6,
           "src": "0750/tile-11-6.png",
-          "bytes": 64674
+          "bytes": 65950
         },
         {
           "column": 12,
           "row": 6,
           "src": "0750/tile-12-6.png",
-          "bytes": 81708
+          "bytes": 78917
         },
         {
           "column": 13,
           "row": 6,
           "src": "0750/tile-13-6.png",
-          "bytes": 77437
+          "bytes": 82962
         },
         {
           "column": 14,
           "row": 6,
           "src": "0750/tile-14-6.png",
-          "bytes": 128457
+          "bytes": 124124
         },
         {
           "column": 15,
           "row": 6,
           "src": "0750/tile-15-6.png",
-          "bytes": 102128
+          "bytes": 85991
         },
         {
           "column": 16,
           "row": 6,
           "src": "0750/tile-16-6.png",
-          "bytes": 8099
+          "bytes": 7105
         },
         {
           "column": 0,
           "row": 7,
           "src": "0750/tile-0-7.png",
-          "bytes": 35660
+          "bytes": 72572
         },
         {
           "column": 1,
           "row": 7,
           "src": "0750/tile-1-7.png",
-          "bytes": 7105
+          "bytes": 88188
         },
         {
           "column": 2,
           "row": 7,
           "src": "0750/tile-2-7.png",
-          "bytes": 26121
+          "bytes": 61154
         },
         {
           "column": 3,
           "row": 7,
           "src": "0750/tile-3-7.png",
-          "bytes": 76886
+          "bytes": 122042
         },
         {
           "column": 4,
           "row": 7,
           "src": "0750/tile-4-7.png",
-          "bytes": 157058
+          "bytes": 191972
         },
         {
           "column": 5,
           "row": 7,
           "src": "0750/tile-5-7.png",
-          "bytes": 183626
+          "bytes": 202905
         },
         {
           "column": 6,
           "row": 7,
           "src": "0750/tile-6-7.png",
-          "bytes": 234314
+          "bytes": 231061
         },
         {
           "column": 7,
           "row": 7,
           "src": "0750/tile-7-7.png",
-          "bytes": 144690
+          "bytes": 149540
         },
         {
           "column": 8,
           "row": 7,
           "src": "0750/tile-8-7.png",
-          "bytes": 199083
+          "bytes": 210027
         },
         {
           "column": 9,
           "row": 7,
           "src": "0750/tile-9-7.png",
-          "bytes": 153760
+          "bytes": 154546
         },
         {
           "column": 10,
           "row": 7,
           "src": "0750/tile-10-7.png",
-          "bytes": 188236
+          "bytes": 194983
         },
         {
           "column": 11,
           "row": 7,
           "src": "0750/tile-11-7.png",
-          "bytes": 145870
+          "bytes": 145194
         },
         {
           "column": 12,
           "row": 7,
           "src": "0750/tile-12-7.png",
-          "bytes": 128241
+          "bytes": 133451
         },
         {
           "column": 13,
           "row": 7,
           "src": "0750/tile-13-7.png",
-          "bytes": 84606
+          "bytes": 84577
         },
         {
           "column": 14,
           "row": 7,
           "src": "0750/tile-14-7.png",
-          "bytes": 38132
+          "bytes": 45907
         },
         {
           "column": 15,
           "row": 7,
           "src": "0750/tile-15-7.png",
-          "bytes": 22285
+          "bytes": 32947
         },
         {
           "column": 16,
           "row": 7,
           "src": "0750/tile-16-7.png",
-          "bytes": 7497
+          "bytes": 7105
         },
         {
           "column": 0,
           "row": 8,
           "src": "0750/tile-0-8.png",
-          "bytes": 39816
+          "bytes": 24497
         },
         {
           "column": 1,
           "row": 8,
           "src": "0750/tile-1-8.png",
-          "bytes": 50177
+          "bytes": 38112
         },
         {
           "column": 2,
           "row": 8,
           "src": "0750/tile-2-8.png",
-          "bytes": 70651
+          "bytes": 49498
         },
         {
           "column": 3,
           "row": 8,
           "src": "0750/tile-3-8.png",
-          "bytes": 107100
+          "bytes": 90598
         },
         {
           "column": 4,
           "row": 8,
           "src": "0750/tile-4-8.png",
-          "bytes": 98348
+          "bytes": 114374
         },
         {
           "column": 5,
           "row": 8,
           "src": "0750/tile-5-8.png",
-          "bytes": 152241
+          "bytes": 192960
         },
         {
           "column": 6,
           "row": 8,
           "src": "0750/tile-6-8.png",
-          "bytes": 247914
+          "bytes": 278542
         },
         {
           "column": 7,
           "row": 8,
           "src": "0750/tile-7-8.png",
-          "bytes": 133308
+          "bytes": 166547
         },
         {
           "column": 8,
           "row": 8,
           "src": "0750/tile-8-8.png",
-          "bytes": 190780
+          "bytes": 208978
         },
         {
           "column": 9,
           "row": 8,
           "src": "0750/tile-9-8.png",
-          "bytes": 193523
+          "bytes": 201860
         },
         {
           "column": 10,
           "row": 8,
           "src": "0750/tile-10-8.png",
-          "bytes": 172094
+          "bytes": 171196
         },
         {
           "column": 11,
           "row": 8,
           "src": "0750/tile-11-8.png",
-          "bytes": 101996
+          "bytes": 101384
         },
         {
           "column": 12,
           "row": 8,
           "src": "0750/tile-12-8.png",
-          "bytes": 78200
+          "bytes": 79654
         },
         {
           "column": 13,
           "row": 8,
           "src": "0750/tile-13-8.png",
-          "bytes": 79385
+          "bytes": 87530
         },
         {
           "column": 14,
           "row": 8,
           "src": "0750/tile-14-8.png",
-          "bytes": 126419
+          "bytes": 131585
         },
         {
           "column": 15,
           "row": 8,
           "src": "0750/tile-15-8.png",
-          "bytes": 99369
+          "bytes": 94214
         },
         {
           "column": 16,
           "row": 8,
           "src": "0750/tile-16-8.png",
-          "bytes": 25113
+          "bytes": 21299
         },
         {
           "column": 0,
           "row": 9,
           "src": "0750/tile-0-9.png",
-          "bytes": 213137
+          "bytes": 209239
         },
         {
           "column": 1,
           "row": 9,
           "src": "0750/tile-1-9.png",
-          "bytes": 243301
+          "bytes": 226721
         },
         {
           "column": 2,
           "row": 9,
           "src": "0750/tile-2-9.png",
-          "bytes": 252319
+          "bytes": 260781
         },
         {
           "column": 3,
           "row": 9,
           "src": "0750/tile-3-9.png",
-          "bytes": 256725
+          "bytes": 272059
         },
         {
           "column": 4,
           "row": 9,
           "src": "0750/tile-4-9.png",
-          "bytes": 97814
+          "bytes": 109090
         },
         {
           "column": 5,
           "row": 9,
           "src": "0750/tile-5-9.png",
-          "bytes": 120301
+          "bytes": 129814
         },
         {
           "column": 6,
           "row": 9,
           "src": "0750/tile-6-9.png",
-          "bytes": 102190
+          "bytes": 112237
         },
         {
           "column": 7,
           "row": 9,
           "src": "0750/tile-7-9.png",
-          "bytes": 177738
+          "bytes": 184330
         },
         {
           "column": 8,
           "row": 9,
           "src": "0750/tile-8-9.png",
-          "bytes": 186037
+          "bytes": 208929
         },
         {
           "column": 9,
           "row": 9,
           "src": "0750/tile-9-9.png",
-          "bytes": 252330
+          "bytes": 251760
         },
         {
           "column": 10,
           "row": 9,
           "src": "0750/tile-10-9.png",
-          "bytes": 171508
+          "bytes": 171808
         },
         {
           "column": 11,
           "row": 9,
           "src": "0750/tile-11-9.png",
-          "bytes": 97870
+          "bytes": 96197
         },
         {
           "column": 12,
           "row": 9,
           "src": "0750/tile-12-9.png",
-          "bytes": 27970
+          "bytes": 29273
         },
         {
           "column": 13,
           "row": 9,
           "src": "0750/tile-13-9.png",
-          "bytes": 33906
+          "bytes": 32825
         },
         {
           "column": 14,
           "row": 9,
           "src": "0750/tile-14-9.png",
-          "bytes": 31515
+          "bytes": 31384
         },
         {
           "column": 15,
           "row": 9,
           "src": "0750/tile-15-9.png",
-          "bytes": 10028
+          "bytes": 10772
         },
         {
           "column": 16,
@@ -1880,97 +1814,97 @@
           "column": 0,
           "row": 10,
           "src": "0750/tile-0-10.png",
-          "bytes": 161015
+          "bytes": 180219
         },
         {
           "column": 1,
           "row": 10,
           "src": "0750/tile-1-10.png",
-          "bytes": 203835
+          "bytes": 234627
         },
         {
           "column": 2,
           "row": 10,
           "src": "0750/tile-2-10.png",
-          "bytes": 159235
+          "bytes": 177537
         },
         {
           "column": 3,
           "row": 10,
           "src": "0750/tile-3-10.png",
-          "bytes": 148686
+          "bytes": 157102
         },
         {
           "column": 4,
           "row": 10,
           "src": "0750/tile-4-10.png",
-          "bytes": 84292
+          "bytes": 78307
         },
         {
           "column": 5,
           "row": 10,
           "src": "0750/tile-5-10.png",
-          "bytes": 47730
+          "bytes": 43543
         },
         {
           "column": 6,
           "row": 10,
           "src": "0750/tile-6-10.png",
-          "bytes": 79279
+          "bytes": 72424
         },
         {
           "column": 7,
           "row": 10,
           "src": "0750/tile-7-10.png",
-          "bytes": 55327
+          "bytes": 64222
         },
         {
           "column": 8,
           "row": 10,
           "src": "0750/tile-8-10.png",
-          "bytes": 91158
+          "bytes": 100518
         },
         {
           "column": 9,
           "row": 10,
           "src": "0750/tile-9-10.png",
-          "bytes": 158353
+          "bytes": 155230
         },
         {
           "column": 10,
           "row": 10,
           "src": "0750/tile-10-10.png",
-          "bytes": 84269
+          "bytes": 84729
         },
         {
           "column": 11,
           "row": 10,
           "src": "0750/tile-11-10.png",
-          "bytes": 107460
+          "bytes": 112713
         },
         {
           "column": 12,
           "row": 10,
           "src": "0750/tile-12-10.png",
-          "bytes": 57232
+          "bytes": 59407
         },
         {
           "column": 13,
           "row": 10,
           "src": "0750/tile-13-10.png",
-          "bytes": 43649
+          "bytes": 43908
         },
         {
           "column": 14,
           "row": 10,
           "src": "0750/tile-14-10.png",
-          "bytes": 126105
+          "bytes": 126483
         },
         {
           "column": 15,
           "row": 10,
           "src": "0750/tile-15-10.png",
-          "bytes": 46792
+          "bytes": 45271
         },
         {
           "column": 16,
@@ -1994,85 +1928,85 @@
           "column": 2,
           "row": 11,
           "src": "0750/tile-2-11.png",
-          "bytes": 9074
+          "bytes": 7105
         },
         {
           "column": 3,
           "row": 11,
           "src": "0750/tile-3-11.png",
-          "bytes": 54443
+          "bytes": 35315
         },
         {
           "column": 4,
           "row": 11,
           "src": "0750/tile-4-11.png",
-          "bytes": 93244
+          "bytes": 81823
         },
         {
           "column": 5,
           "row": 11,
           "src": "0750/tile-5-11.png",
-          "bytes": 59140
+          "bytes": 67241
         },
         {
           "column": 6,
           "row": 11,
           "src": "0750/tile-6-11.png",
-          "bytes": 30691
+          "bytes": 32699
         },
         {
           "column": 7,
           "row": 11,
           "src": "0750/tile-7-11.png",
-          "bytes": 31586
+          "bytes": 26106
         },
         {
           "column": 8,
           "row": 11,
           "src": "0750/tile-8-11.png",
-          "bytes": 109334
+          "bytes": 112942
         },
         {
           "column": 9,
           "row": 11,
           "src": "0750/tile-9-11.png",
-          "bytes": 49575
+          "bytes": 47771
         },
         {
           "column": 10,
           "row": 11,
           "src": "0750/tile-10-11.png",
-          "bytes": 58152
+          "bytes": 54668
         },
         {
           "column": 11,
           "row": 11,
           "src": "0750/tile-11-11.png",
-          "bytes": 84107
+          "bytes": 86233
         },
         {
           "column": 12,
           "row": 11,
           "src": "0750/tile-12-11.png",
-          "bytes": 99957
+          "bytes": 104044
         },
         {
           "column": 13,
           "row": 11,
           "src": "0750/tile-13-11.png",
-          "bytes": 47077
+          "bytes": 49917
         },
         {
           "column": 14,
           "row": 11,
           "src": "0750/tile-14-11.png",
-          "bytes": 27158
+          "bytes": 27475
         },
         {
           "column": 15,
           "row": 11,
           "src": "0750/tile-15-11.png",
-          "bytes": 25547
+          "bytes": 24504
         },
         {
           "column": 16,
@@ -2096,73 +2030,73 @@
           "column": 2,
           "row": 12,
           "src": "0750/tile-2-12.png",
-          "bytes": 17829
+          "bytes": 7105
         },
         {
           "column": 3,
           "row": 12,
           "src": "0750/tile-3-12.png",
-          "bytes": 129367
+          "bytes": 112466
         },
         {
           "column": 4,
           "row": 12,
           "src": "0750/tile-4-12.png",
-          "bytes": 161394
+          "bytes": 163177
         },
         {
           "column": 5,
           "row": 12,
           "src": "0750/tile-5-12.png",
-          "bytes": 15186
+          "bytes": 13073
         },
         {
           "column": 6,
           "row": 12,
           "src": "0750/tile-6-12.png",
-          "bytes": 46719
+          "bytes": 40431
         },
         {
           "column": 7,
           "row": 12,
           "src": "0750/tile-7-12.png",
-          "bytes": 56549
+          "bytes": 55953
         },
         {
           "column": 8,
           "row": 12,
           "src": "0750/tile-8-12.png",
-          "bytes": 64624
+          "bytes": 70902
         },
         {
           "column": 9,
           "row": 12,
           "src": "0750/tile-9-12.png",
-          "bytes": 46937
+          "bytes": 42790
         },
         {
           "column": 10,
           "row": 12,
           "src": "0750/tile-10-12.png",
-          "bytes": 27702
+          "bytes": 25165
         },
         {
           "column": 11,
           "row": 12,
           "src": "0750/tile-11-12.png",
-          "bytes": 135149
+          "bytes": 129271
         },
         {
           "column": 12,
           "row": 12,
           "src": "0750/tile-12-12.png",
-          "bytes": 255315
+          "bytes": 253158
         },
         {
           "column": 13,
           "row": 12,
           "src": "0750/tile-13-12.png",
-          "bytes": 156766
+          "bytes": 160178
         },
         {
           "column": 14,
@@ -2198,73 +2132,73 @@
           "column": 2,
           "row": 13,
           "src": "0750/tile-2-13.png",
-          "bytes": 12030
+          "bytes": 7105
         },
         {
           "column": 3,
           "row": 13,
           "src": "0750/tile-3-13.png",
-          "bytes": 104675
+          "bytes": 142100
         },
         {
           "column": 4,
           "row": 13,
           "src": "0750/tile-4-13.png",
-          "bytes": 15794
+          "bytes": 39013
         },
         {
           "column": 5,
           "row": 13,
           "src": "0750/tile-5-13.png",
-          "bytes": 39034
+          "bytes": 34516
         },
         {
           "column": 6,
           "row": 13,
           "src": "0750/tile-6-13.png",
-          "bytes": 79392
+          "bytes": 77456
         },
         {
           "column": 7,
           "row": 13,
           "src": "0750/tile-7-13.png",
-          "bytes": 51580
+          "bytes": 55077
         },
         {
           "column": 8,
           "row": 13,
           "src": "0750/tile-8-13.png",
-          "bytes": 48940
+          "bytes": 51751
         },
         {
           "column": 9,
           "row": 13,
           "src": "0750/tile-9-13.png",
-          "bytes": 50083
+          "bytes": 45535
         },
         {
           "column": 10,
           "row": 13,
           "src": "0750/tile-10-13.png",
-          "bytes": 36843
+          "bytes": 35042
         },
         {
           "column": 11,
           "row": 13,
           "src": "0750/tile-11-13.png",
-          "bytes": 104191
+          "bytes": 97506
         },
         {
           "column": 12,
           "row": 13,
           "src": "0750/tile-12-13.png",
-          "bytes": 182639
+          "bytes": 185936
         },
         {
           "column": 13,
           "row": 13,
           "src": "0750/tile-13-13.png",
-          "bytes": 58847
+          "bytes": 59459
         },
         {
           "column": 14,
@@ -2318,49 +2252,49 @@
           "column": 5,
           "row": 14,
           "src": "0750/tile-5-14.png",
-          "bytes": 32761
+          "bytes": 28796
         },
         {
           "column": 6,
           "row": 14,
           "src": "0750/tile-6-14.png",
-          "bytes": 76493
+          "bytes": 72256
         },
         {
           "column": 7,
           "row": 14,
           "src": "0750/tile-7-14.png",
-          "bytes": 35839
+          "bytes": 41009
         },
         {
           "column": 8,
           "row": 14,
           "src": "0750/tile-8-14.png",
-          "bytes": 65747
+          "bytes": 67264
         },
         {
           "column": 9,
           "row": 14,
           "src": "0750/tile-9-14.png",
-          "bytes": 80817
+          "bytes": 79650
         },
         {
           "column": 10,
           "row": 14,
           "src": "0750/tile-10-14.png",
-          "bytes": 139903
+          "bytes": 142352
         },
         {
           "column": 11,
           "row": 14,
           "src": "0750/tile-11-14.png",
-          "bytes": 34880
+          "bytes": 31186
         },
         {
           "column": 12,
           "row": 14,
           "src": "0750/tile-12-14.png",
-          "bytes": 58465
+          "bytes": 58137
         },
         {
           "column": 13,
@@ -2420,13 +2354,13 @@
           "column": 5,
           "row": 15,
           "src": "0750/tile-5-15.png",
-          "bytes": 24811
+          "bytes": 27767
         },
         {
           "column": 6,
           "row": 15,
           "src": "0750/tile-6-15.png",
-          "bytes": 33028
+          "bytes": 43554
         },
         {
           "column": 7,
@@ -2438,19 +2372,19 @@
           "column": 8,
           "row": 15,
           "src": "0750/tile-8-15.png",
-          "bytes": 29428
+          "bytes": 30486
         },
         {
           "column": 9,
           "row": 15,
           "src": "0750/tile-9-15.png",
-          "bytes": 11856
+          "bytes": 12856
         },
         {
           "column": 10,
           "row": 15,
           "src": "0750/tile-10-15.png",
-          "bytes": 29340
+          "bytes": 31664
         },
         {
           "column": 11,

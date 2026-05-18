@@ -67,8 +67,8 @@
   ]);
   const CUSTOM_MASONRY_LAYOUTS = {
     "agency-founder-team-leadership-and-delivery-system": {
-      mode: "row-grid",
-      columnCount: 7,
+      mode: "dense",
+      columnCount: 5,
       columnWidth: CARD_WIDTHS.text,
     },
     "brand-systems-identity-and-market-positioning": {
